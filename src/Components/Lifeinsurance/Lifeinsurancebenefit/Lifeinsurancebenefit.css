@@ -1,0 +1,102 @@
+.tax-solutions-section {
+   background: linear-gradient(to right, rgba(24, 31, 36, 0.8), rgba(24, 31, 36, 0.8)),
+              url('../../../assets/about_img2.jpg') no-repeat center center;
+  background-size: cover;
+
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tax-heading {
+  font-size: 28px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tax-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tax-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tax-card:hover {
+  transform: translateY(-5px);
+}
+
+.tax-card.featured {
+  background-color: #2e4e5f;
+  color: white;
+}
+
+.tax-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tax-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.tax-card.featured p,
+.tax-card.featured h3 {
+  color: #fff;
+}
+
+.card-icon img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #0c3d3e;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tax-card.featured .read-more {
+  color: #dce9ea;
+}
+
+.view-more {
+  margin-top: 40px;
+  background-color: #ff5a3c;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.view-more:hover {
+  background-color: #ff6246;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .tax-card {
+    text-align: center;
+  }
+}

@@ -1,0 +1,105 @@
+.life-insurance-contact .contact-section {
+  background: linear-gradient(to right, rgba(24, 31, 36, 0.8), rgba(24, 31, 36, 0.8)),
+              url('../../../assets/about_img2.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.life-insurance-contact .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.life-insurance-contact .form-box {
+  flex: 1 1 500px;
+  margin-bottom: 20px;
+}
+
+.life-insurance-contact .form-box h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.life-insurance-contact .form-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.life-insurance-contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.life-insurance-contact .input-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.life-insurance-contact .contact-form input,
+.life-insurance-contact .contact-form textarea {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.life-insurance-contact.contact-form textarea {
+  resize: vertical;
+}
+
+.life-insurance-contact .contact-form button {
+  width: 120px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+.life-insurance-contact .contact-form button:hover {
+  background-color: #e64a19;
+}
+
+.life-insurance-contact .contact-info {
+  flex: 1 1 300px;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.life-insurance-contact .contact-info img{
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+ .life-insurance-contact  .contact-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+.life-insurance-contact  .contact-info {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+
+ .life-insurance-contact .input-row {
+    flex-direction: column;
+  }
+}

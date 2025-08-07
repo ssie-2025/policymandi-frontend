@@ -1,0 +1,132 @@
+.education-section {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.education-section .education-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.education-section .left-column {
+    margin-top: 100px;
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+}
+
+.education-section .image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.education-section .grid-image {
+  width: 100%;
+  border-radius: 12px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.education-section .service-badge {
+  background: #fba61a;
+  color: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.education-section .badge-icon {
+  font-size: 24px;
+}
+
+.education-section .right-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.education-section .about-title {
+  font-size: 14px;
+  color: #fba61a;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.education-section .main-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.education-section .highlight {
+  color: #fba61a;
+}
+
+.education-section .description {
+  margin: 20px 0;
+  color: #666;
+}
+
+.education-section .features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.education-section .features h4 {
+  margin: 0;
+  color: #222;
+}
+
+.education-section .features p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.education-section .quote-box {
+  background: #eef6f6;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  position: relative;
+  font-size: 14px;
+  color: #444;
+}
+
+.education-section .quote-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #00a08c;
+}
+
+.education-section .contact {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.education-section .discover-btn {
+  background: #fba61a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.education-section .call-info {
+  font-size: 14px;
+  color: #333;
+}

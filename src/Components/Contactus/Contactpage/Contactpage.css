@@ -1,0 +1,217 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    min-width: 300px;
+    margin-left: 100px;
+    margin-top: -100px;
+    border-radius: 50px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.contact-container .contact-form-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.contact-container .contact-form-section h2 {
+    margin-bottom: 0.5rem;
+}
+
+.contact-container .subtitle {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container .contact-form input,
+.contact-container .contact-form select,
+.contact-container .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-container .contact-form input[type="email"] {
+    width: 95%;
+}
+
+.contact-container .name-fields {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-container .name-fields input {
+    flex: 1;
+}
+
+.contact-container .contact-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-container .contact-details select {
+    width: 80px;
+}
+
+.contact-container .contact-form textarea {
+    width: 95%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-container .contact-form .btn {
+    margin: 20px;
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.contact-container .contact-form .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.contact-container .contact-form .btn::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FF0000, #FF7300, #FFFB00, #48FF00,
+            #00FFD5, #002BFF, #FF00C8, #FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.contact-container .contact-form .btn:hover::before {
+    opacity: 1;
+}
+
+.contact-container .contact-form .btn:active::after {
+    background: transparent;
+}
+
+.contact-container .contact-form .btn:active {
+    color: #000;
+    font-weight: bold;
+}
+
+/* .contact-container .contact-form button {
+    background-color: #ff5400;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+} */
+
+.contact-container .contact-info-section {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    background-color: #ff5400;
+    color: white;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.contact-container .contact-info-section p {
+    margin-bottom: 1.5rem;
+}
+
+.contact-container .info-block {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.contact-container .info-block strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+.contact-container .social-icons {
+    margin-left: 100px;
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.contact-container .social-icons a {
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.contact-container .social-icons a:hover {
+    color: #000;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        margin-left: 0px;
+        flex-direction: column;
+        margin-top: -70px;
+    }
+
+    .contact-container .name-fields,
+    .contact-container .contact-details {
+        width: 250px;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,85 @@
+.criteria-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.criteria-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.criteria-section .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.criteria-section .card {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.criteria-section .criteria-service-card {
+  width: 280px;
+  padding: 25px;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.criteria-section .criteria-service-card:hover {
+  transform: translateY(-5px);
+}
+
+.criteria-section .criteria-service-card h4 {
+    color: #fff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.criteria-section .criteria-service-card p{
+    color: #ccc;
+}
+
+.criteria-section .criteria-service-card a {
+  margin-top: 10px;
+  display: inline-block;
+  color: #1d1d1d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.criteria-section .criteria-button {
+  background-color: #ff5a3c;
+  color: white;
+  padding: 12px 24px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.criteria-section .criteria-button:hover {
+  background-color: #fd674c;
+}
+
+
+@media (max-width: 768px) {
+ .criteria-section .criteria-services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .criteria-section .criteria-service-card {
+    width: 90%;
+  }
+}

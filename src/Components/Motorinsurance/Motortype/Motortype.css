@@ -1,0 +1,59 @@
+.motor-services-section {
+  background-color: #0a1f44;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+.motor-services-section .text-clip {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+     background-image: url('../../../assets/brand7.png'); 
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.motor-services-section p{
+    margin-bottom: 100px;
+}
+
+
+.motor-services-section .motor-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.motor-services-section .motor-service-card {
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  padding: 25px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  height: 250px;
+}
+
+.motor-services-section .motor-service-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.motor-services-section .motor-service-icon {
+    margin-top: -100px;
+  width: 70px;
+  margin-bottom: 15px;
+}
+.motor-services-section .motor-service-card h3{
+    background: linear-gradient(to right, #ff5a3c, #fff); 
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.motor-services-section .motor-service-card p{
+    font-size: 0.8rem;
+}

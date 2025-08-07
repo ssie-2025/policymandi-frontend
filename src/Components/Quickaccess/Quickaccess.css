@@ -1,0 +1,62 @@
+.quick-access-section{
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9fcff;
+}
+.quick-access-section h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.quick-access-section h2 span{
+    color: #1a3cc4;
+    background: linear-gradient(to right, #1a3cc4, #e40046);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.quick-access-section .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.quick-access-section ,.quick-card{
+    background: #fff;
+    width: 150xp;
+    padding: 20px 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.quick-access-section .quick-card:hover {
+  transform: translateY(-5px);
+}
+.quick-access-section .quick-card img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.quick-access-section .quick-card p{
+    font-size: 14px;
+    color: #222;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .quick-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-card {
+    width: 100%;
+  }
+}

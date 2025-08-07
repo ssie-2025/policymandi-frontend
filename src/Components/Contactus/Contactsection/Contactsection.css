@@ -1,0 +1,132 @@
+/* ContactUs.css */
+.contactus-wrapper {
+    margin-top: -100px;
+  padding: 50px 20px;
+  background-color: transparent;
+}
+
+.contactus-wrapper .contact-box {
+  max-width: 1200px;
+  background: #000;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contactus-wrapper .contact-info, .contactus-wrapper .contact-form {
+  flex: 1;
+  min-width: 320px;
+  padding: 40px;
+}
+
+.contactus-wrapper .contact-info {
+  background-color: #f9f9f9;
+}
+
+.contactus-wrapper .contact-info h2,
+.contactus-wrapper .contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contactus-wrapper .contact-info p {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.contactus-wrapper .contact-detail {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contactus-wrapper .contact-detail .icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #2265d4;
+}
+
+.contactus-wrapper .contact-detail h4 {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+}
+
+.contactus-wrapper .contact-detail p {
+  margin: 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.contactus-wrapper .social-icons h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contactus-wrapper .social-icons .icons span {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+/* Form Styling */
+.contactus-wrapper .contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contactus-wrapper .form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contactus-wrapper .form-row input {
+  flex: 1;
+}
+
+.contactus-wrapper .contact-form input,
+.contactus-wrapper .contact-form textarea {
+  width: 95%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.contactus-wrapper .contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contactus-wrapper .contact-form button {
+  background-color: #ff5a3c;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contactus-wrapper .contact-form button:hover {
+  background-color: #ee6249;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+ .contactus-wrapper .contact-box {
+    flex-direction: column;
+  }
+
+ .contactus-wrapper .form-row {
+    flex-direction: column;
+  }
+}

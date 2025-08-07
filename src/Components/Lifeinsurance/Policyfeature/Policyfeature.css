@@ -1,0 +1,74 @@
+.Policyfeature-section{
+    padding: 60px 20px;
+    background: #fff;
+    display: flex;
+}
+.Policyfeature-section .service-header h2{
+    margin-top: 200px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff5a3c;
+}
+.Policyfeature-section .service-header p{
+    font-size: 1rem;
+    color: #555;
+    max-width: 500px;
+    margin: 0 auto 20px;
+}
+.Policyfeature-section .learn-more{
+    background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.Policyfeature-section .learn-more:hover{
+    background: #ff5a3c;
+}
+.Policyfeature-section .services-grid{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.Policyfeature-section .service-card{
+  background-color: #0c0c0c;
+  color: #fff;
+  padding: 30px;
+  width: 150px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+}
+.Policyfeature-section .service-card h3{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.Policyfeature-section .service-card p{
+    font-size: 0.95rem;
+    color: #bbb;
+}
+@media (max-width: 768px) {
+  .Policyfeature-section{
+    display: flex;
+    flex-direction: column;
+  }
+   .Policyfeature-section  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .Policyfeature-section .services-header h2 {
+    font-size: 1.6rem;
+  }
+
+ .Policyfeature-section .service-card {
+    width: 100%;
+    margin-left: 50px;
+  }
+}

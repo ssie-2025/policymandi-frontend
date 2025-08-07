@@ -1,0 +1,73 @@
+.what-section {
+  background: #f5f9ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.what-header {
+  margin-bottom: 40px;
+}
+
+.what-subtitle {
+  color: #ff5a3c;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.what-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111;
+}
+
+.what-slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px;
+}
+
+.what-card {
+  background: linear-gradient(#004d40, #012b24);
+  color: white;
+  padding: 25px 20px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  min-width: 260px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.what-card:hover {
+  transform: translateY(-10px);
+}
+
+.what-tag {
+  background: #0e0e0e;
+  padding: 5px 14px;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.what-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.what-card-desc {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+/* Hide scrollbar on mobile */
+.what-slider::-webkit-scrollbar {
+  display: none;
+}

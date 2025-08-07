@@ -1,0 +1,269 @@
+.howitwork-scroll-section{
+    padding: 60px 20px;
+    text-align: center;
+}
+.howitwork-scroll-section .background-img{
+     background: linear-gradient(to right, rgba(24, 31, 36, 0.8), rgba(24, 31, 36, 0.8)),
+              url('../../../assets/lifeinsurance/agent.jpg') no-repeat center center;
+  background-size: cover;
+  height: 40vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.howitwork-scroll-section h2{
+    padding-top: 40px;
+    font-size: 2rem;
+    color: #fff;
+}
+.howitwork-scroll-section p{
+    color: #ccc;
+}
+
+.howitwork-scroll-section .scroll-container-wrapper{
+    margin-top: -100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.howitwork-scroll-section .scroll-container{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+.howitwork-scroll-section .scroll-container::-webkit-scrollbar{
+    display: none;
+}
+.howitwork-scroll-section .scroll-card{
+    background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  min-width: 280px;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.howitwork-scroll-section .circle {
+  background-color: #ff5a3c;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto 10px;
+  font-size: 1rem;
+}
+.howitwork-scroll-section .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.howitwork-scroll-section .scroll-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.howitwork-scroll-section .scroll-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.howitwork-scroll-section .scroll-card a {
+  text-decoration: none;
+  color: #ff5a3c;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.howitwork-scroll-section .scroll-btn {
+  background: #ff5a3c;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.howitwork-scroll-section .scroll-btn.left {
+  left: -20px;
+}
+
+.howitwork-scroll-section .scroll-btn.right {
+  right: -20px;
+}
+
+.howitwork-scroll-section .view-all-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: #ff5a3c;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.howitwork-scroll-section .view-all-btn:hover {
+  background-color: #ff7e67;
+}
+@media (max-width: 768px) {
+  .howitwork-scroll-section .scroll-card {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .howitwork-scroll-section .scroll-btn.left {
+    left: 0;
+  }
+
+  .howitwork-scroll-section .scroll-btn.right {
+    right: 0;
+  }
+}
+
+/* .scroll-section {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.scroll-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.scroll-container-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px 0;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-card {
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  min-width: 280px;
+  text-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.circle {
+  background-color: green;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  margin: 0 auto 10px;
+  font-size: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.scroll-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.scroll-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.scroll-card a {
+  text-decoration: none;
+  color: green;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.scroll-btn {
+  background: green;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-btn.left {
+  left: -20px;
+}
+
+.scroll-btn.right {
+  right: -20px;
+}
+
+.view-all-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: darkgreen;
+}
+
+@media (max-width: 768px) {
+  .scroll-card {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .scroll-btn.left {
+    left: 0;
+  }
+
+  .scroll-btn.right {
+    right: 0;
+  }
+} */

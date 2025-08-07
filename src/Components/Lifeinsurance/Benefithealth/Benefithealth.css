@@ -1,0 +1,85 @@
+.benefithealth-section {
+  background: #f7f7f7;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.benefithealth-section .ai-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.benefithealth-section .ai-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.benefithealth-section .ai-button {
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.benefithealth-section .ai-button:hover {
+  background-color: #e64a19;
+}
+
+.benefithealth-section .ai-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefithealth-section .ai-box {
+  background: white;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.benefithealth-section .ai-box:hover {
+  transform: scale(1.06);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.benefithealth-section .main-box {
+  background: #ff5722;
+  color: white;
+}
+
+.benefithealth-section .main-box h3, .main-box p {
+  color: white;
+}
+
+.benefithealth-section .ai-icon {
+    width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.benefithealth-section   .ai-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ .benefithealth-section .ai-box {
+    max-width: 90%;
+  }
+}

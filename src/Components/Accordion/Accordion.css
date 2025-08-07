@@ -1,0 +1,87 @@
+.faq-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(#c7f9cc, #fff);
+  padding: 60px 30px;
+  margin: auto;
+  gap: 40px;
+}
+
+.faq-section  .faq-left {
+    
+  flex: 1 1 40%;
+}
+
+.faq-section  .faq-left .faq-badge {
+  color: #ff5400;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.faq-section  .faq-left h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.faq-section  .faq-left h2 span {
+  color: #ff5a3c;
+}
+
+.faq-section  .faq-left p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.faq-section .faq-right {
+  flex: 1 1 50%;
+}
+
+.faq-section  .faq-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-section .faq-question {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.faq-section .faq-answer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.faq-section .icon {
+  font-size: 18px;
+  color: #ff5400;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-section .faq-section {
+    flex-direction: column;
+  }
+
+  .faq-left, .faq-right {
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,93 @@
+.tax-attorney-container {
+  background: #f9f9f4;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tax-attorney-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 400px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border: 4px solid #e6ede0;
+}
+
+.text-section {
+  max-width: 600px;
+}
+
+.label {
+  background: #e6ede0;
+  padding: 4px 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.text-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2c2c2c;
+}
+
+.text-section p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 20px;
+  color: #0c3d3e;
+}
+
+.cta-button {
+  background-color: #0c3d3e;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0a2f2f;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tax-attorney-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+}

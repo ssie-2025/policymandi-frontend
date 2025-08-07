@@ -1,0 +1,65 @@
+.why-section {
+  background: #f4f6fc;
+  padding: 50px 20px;
+}
+
+.why-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #000;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-card {
+  flex: 1 1 250px;
+  min-width: 250px;
+  padding: 30px 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  transition: transform 0.3s;
+}
+
+.why-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+}
+
+.why-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d2d2d2;
+}
+
+.why-card .why-icon {
+  font-size: 30px;
+}
+
+.highlight {
+  background-color: #ff6600;
+  color: #fff;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+}
+.highlight:hover{
+    transform: scale(1.05);
+}
+.highlight h3,
+.highlight p {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .why-container {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .highlight {
+    border-radius: 0;
+  }
+}
