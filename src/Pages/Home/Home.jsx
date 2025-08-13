@@ -12,6 +12,8 @@ import Whylifeinsurance from '../../Components/WhyLifeInsurance/Whylifeinsurance
 import Quickaccess from '../../Components/Quickaccess/Quickaccess';
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn';
 import Chatbot from '../../Components/Chatbot/Chatbot';
+import Testimonial from '../../Components/Testimonial/Testimonial';
+
 
 
 function Home() {
@@ -29,6 +31,7 @@ function Home() {
       <Brandcarousel/>
       <Bannersection/>
       <Whylifeinsurance/>
+      <Testimonial/>
     </>
   )
 }

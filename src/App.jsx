@@ -18,6 +18,8 @@ import Lifeinsurance from './Pages/Lifeinsurance/Lifeinsurance';
 import Healthinsurance from './Pages/Healthinsurance/Healthinsurance';
 import Motorinsurance from './Pages/Motorinsurance/Motorinsurance';
 import Contact from './Pages/Contact/Contact';
+import LoginPage from './Pages/LoginPage/LoginPage';
+import SignupPage from './Pages/SignupPage/SignupPage';
 
 
 
@@ -30,6 +32,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/login' element={<LoginPage/>}/>
+        <Route path='/signup' element={<SignupPage/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/life-insurance' element={<Lifeinsurance/>}/>
         <Route path='/health-insurance' element={<Healthinsurance/>}/>
