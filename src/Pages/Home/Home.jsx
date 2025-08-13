@@ -11,12 +11,14 @@ import Brandcarousel from '../../Components/BrandCarousel/Brandcarousel'
 import Whylifeinsurance from '../../Components/WhyLifeInsurance/Whylifeinsurance'
 import Quickaccess from '../../Components/Quickaccess/Quickaccess';
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn';
+import Chatbot from '../../Components/Chatbot/Chatbot';
 
 
 function Home() {
   return (
     <>
       <Hero/>
+      <Chatbot/>
       <Scrolltopbtn/>
       <Heading  title='Why Choose PolicyMandi?'/>
       <Feature/>
