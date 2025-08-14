@@ -158,7 +158,7 @@
   box-shadow: 0 0 8px rgba(0,0,0,0.06);
 }
 .chat-footer .chat-form:focus-within{
-  outline: 2px solid #ff5a3c
+  outline: 2px solid #ff5a3c;
 }
 .chat-form .message-input{
   border: none;
