@@ -56,8 +56,12 @@ function Navbar() {
         </div> */}
 
         <div className="btn">
-          {!loggedInUser && <Link to="/login"><button>Login</button></Link>}
-         {loggedInUser && <button onClick={handleLogout}>Logout</button>}
+          {!loggedInUser ? (
+        <Link to="/login"><button>Login</button></Link>
+
+      ) : (
+        <button onClick={handleLogout}>Logout</button>
+      )}
         </div>
 
         <button className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>

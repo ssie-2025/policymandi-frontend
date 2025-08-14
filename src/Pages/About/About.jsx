@@ -8,6 +8,7 @@ import Acoordion from '../../Components/Accordion/Acoordion'
 import Corevalue from '../../Components/Corevalue/Corevalue'
 import Introduction from '../../Components/Introduction/Introduction'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
+import TabCalculator from '../../Components/TabCalculator/TabCalculator'
 
 function About() {
   return (
@@ -17,6 +18,7 @@ function About() {
     <Aboutus/>
     <Introduction/>
     <Weoffer/>
+    <TabCalculator/>
     <Ourmission/>
     <Whyus/>
     <Corevalue/>

@@ -13,6 +13,7 @@ import Quickaccess from '../../Components/Quickaccess/Quickaccess';
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn';
 import Chatbot from '../../Components/Chatbot/Chatbot';
 import Testimonial from '../../Components/Testimonial/Testimonial';
+import TabCalculator from '../../Components/TabCalculator/TabCalculator';
 
 
 
@@ -26,6 +27,7 @@ function Home() {
       <Feature/>
       {/* <Video/> */}
       <Whatweserve/>
+      <TabCalculator/>
       <Insurancematter/> 
       <Heading  title='Our Parters' subTitle="Secure your future with leading insurance partners"/>
       <Brandcarousel/>

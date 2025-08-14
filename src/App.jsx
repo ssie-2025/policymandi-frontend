@@ -20,6 +20,7 @@ import Motorinsurance from './Pages/Motorinsurance/Motorinsurance';
 import Contact from './Pages/Contact/Contact';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import SignupPage from './Pages/SignupPage/SignupPage';
+import CalculatorPage from './Pages/CalculatorPage/CalculatorPage';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route path='/health-insurance' element={<Healthinsurance/>}/>
         <Route path='/motor-insurance' element={<Motorinsurance/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/calculator' element={<CalculatorPage/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>

@@ -44,8 +44,6 @@ function Quickaccess() {
             ))}
         </div>
     </div>
-
-    
   )
 }
 

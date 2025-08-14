@@ -1,6 +1,7 @@
 import React from 'react'
 import './Whyus.css'
 import side_img from '../../assets/about_img5.png'
+import { Link } from 'react-router-dom'
 
 function Whyus() {
   return (
@@ -12,7 +13,7 @@ function Whyus() {
           <h1>Your Trusted Insurance Partner</h1>
           <p>Get expert advice, transparent pricing, and coverage tailored just for you.</p>
           <div className="hero-buttons">
-            <button className="btn btn-primary">Get a Quote</button>
+            <button className="btn btn-primary"><Link to="/calculator">Get a Quote</Link></button>
             <button className="btn btn-secondary">Learn More</button>
           </div>
         </div>
