@@ -9,6 +9,7 @@ import Corevalue from '../../Components/Corevalue/Corevalue'
 import Introduction from '../../Components/Introduction/Introduction'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import TabCalculator from '../../Components/TabCalculator/TabCalculator'
+import GetTouch from '../../Components/GetTouch/GetTouch'
 
 function About() {
   return (
@@ -23,6 +24,7 @@ function About() {
     <Whyus/>
     <Corevalue/>
     <Acoordion/>
+    <GetTouch/>
     </>
   )
 }

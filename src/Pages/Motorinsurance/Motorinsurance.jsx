@@ -10,6 +10,7 @@ import Contact from '../../Components/Lifeinsurance/Contact/Contact'
 import Motorwhybuy from '../../Components/Motorinsurance/Motorwhybuy/Motorwhybuy'
 import Motorfaq from '../../Components/Motorinsurance/Motorfaq/Motorfaq'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
+import PremiumCalculator from '../../Components/Calculator/PremiumCalculator'
 
 function Motorinsurance() {
   return (
@@ -21,6 +22,7 @@ function Motorinsurance() {
     <MotorComparison/>
     <Motorcriteria/>
     <Motorpayment/>
+    <PremiumCalculator/>
     <Bannersection/>
     <Motorwhybuy/>
     <Motorfaq/>

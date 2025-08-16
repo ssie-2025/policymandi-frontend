@@ -6,6 +6,7 @@ import { FaFastBackward } from "react-icons/fa";
 import { RiServiceFill } from "react-icons/ri";
 import { GrSupport } from "react-icons/gr";
 import { RiSecurePaymentLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 function Feature() {
     const features = [
@@ -48,7 +49,7 @@ function Feature() {
             <div className="icon">{feature.icon}</div>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
-            <a href="#" className="read-more">Read More →</a>
+           <Link to="/contact"> <a href="#" className="read-more">Read More →</a></Link>
           </div>
         ))}
       </div>

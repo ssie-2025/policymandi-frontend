@@ -14,6 +14,7 @@ import Testimonial from '../../Components/Testimonial/Testimonial';
 import TabCalculator from '../../Components/TabCalculator/TabCalculator';
 import GetTouch from '../../Components/GetTouch/GetTouch';
 import Quickaccess from '../../Components/Quickaccess/Quickaccess'
+// import Popup from '../../Components/Popup/Popup';
 
 
 
@@ -21,6 +22,7 @@ function Home() {
   return (
     <>
       <Hero/>
+      {/* <Popup/> */}
       <Chatbot/>
       <Scrolltopbtn/>
       <Heading  title='Why Choose PolicyMandi?'/>

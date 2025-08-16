@@ -10,6 +10,8 @@ import Howitwork from '../../Components/Lifeinsurance/Howitwork/Howitwork'
 import Claimsettlement from '../../Components/Lifeinsurance/Claimsettlement/Claimsettlement'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import Heroabout from '../../Components/HeroAbout/Heroabout'
+import GetTouch from '../../Components/GetTouch/GetTouch'
+import CoverageCalculator from '../../Components/Calculator/CoverageCalculator'
 
 function Lifeinsurance() {
   return (
@@ -18,6 +20,7 @@ function Lifeinsurance() {
     <Scrolltopbtn/>
     <Lifeabout/>
     <Lifeinsurancebenefit/>
+    <CoverageCalculator/>
     <Eligibility/>
     <Policyfeature/>
     <Howitwork/>

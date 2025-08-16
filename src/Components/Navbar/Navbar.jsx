@@ -25,6 +25,7 @@ function Navbar() {
         navigate('/login');
     }, 1000)
   }
+
   
 
     return (

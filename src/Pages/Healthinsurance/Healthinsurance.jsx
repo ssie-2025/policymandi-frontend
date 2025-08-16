@@ -10,6 +10,7 @@ import Tab from '../../Components/Healthinsurance/Tab/Tab'
 import Faqhealth from '../../Components/Healthinsurance/Faqhealth/Faqhealth'
 import Contact from '../../Components/Lifeinsurance/Contact/Contact'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
+import GetTouch from '../../Components/GetTouch/GetTouch'
 
 function Healthinsurance() {
   return (
