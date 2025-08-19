@@ -1,17 +1,16 @@
-
 .about-hero {
   width: 100%;
   padding: 60px 20px;
   background: linear-gradient(rgba(60, 0, 100, 0.5), rgba(0, 0, 0, 0.7)),
-              url("../../assets/about_img.jpg") no-repeat center/cover;
+    url("../../assets/about_img.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
-border-bottom-left-radius: 20px;
-border-bottom-right-radius: 20px;
-  max-width: 1280px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  max-width: 1300px;
 }
 
 .about-content {
@@ -34,12 +33,14 @@ border-bottom-right-radius: 20px;
   .about-content h1 {
     font-size: 36px;
   }
+
   .about-content p {
     font-size: 16px;
   }
+
   .about-hero {
     padding: 40px 15px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-} 
+}

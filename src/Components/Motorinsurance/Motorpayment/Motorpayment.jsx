@@ -1,6 +1,6 @@
 import React from 'react'
 import './Motorpayment.css'
-import left_img from '../../../assets/motoinsurance/img_about2.png'
+import left_img from '../../../assets/motoinsurance/img-about3.png'
 import { PiAirplaneTiltFill } from "react-icons/pi";
 
 function Motorpayment() {

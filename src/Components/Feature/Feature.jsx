@@ -49,7 +49,7 @@ function Feature() {
             <div className="icon">{feature.icon}</div>
             <h3>{feature.title}</h3>
             <p>{feature.description}</p>
-           <Link to="/contact"> <a href="#" className="read-more">Read More →</a></Link>
+           <Link to="/contact" className='read-more'> Read More →</Link>
           </div>
         ))}
       </div>

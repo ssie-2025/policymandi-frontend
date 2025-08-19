@@ -2,17 +2,26 @@
     padding: 60px 20px;
     background: #fff;
     display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.Policyfeature-section .service-header{
+  position: sticky;
+  top: 60px;
+  flex: 0 0 350px;
+  height: fit-content;
+  z-index: 2;
 }
 .Policyfeature-section .service-header h2{
     margin-top: 200px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
     color: #ff5a3c;
 }
 .Policyfeature-section .service-header p{
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #555;
-    max-width: 500px;
+    width: 400px;
     margin: 0 auto 20px;
 }
 .Policyfeature-section .learn-more{
@@ -30,11 +39,18 @@
 }
 .Policyfeature-section .services-grid{
     width: 60%;
+    max-height: 80vh;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 100px;
     margin-top: 40px;
     gap: 20px;
+    scrollbar-width: none;
+}
+.Policyfeature-section .services-grid::-webkit-scrollbar {
+    display: none; 
 }
 .Policyfeature-section .service-card{
   background-color: #0c0c0c;

@@ -6,31 +6,26 @@ const cardData = [
     id: 1,
     title: 'Choose Your Plan',
     description: "Browse and compare various life insurance options based on your needs. Whether it's term insurance or savings-linked plans, pick one that fits your goals and budget.",
-    icon: '✅'
   },
   {
     id: 2,
     title: 'Submit Your Application',
     description: 'Fill in your personal, financial, and health details in a secure online form. This helps insurers assess your profile and coverage eligibility.',
-    icon: '📝'
   },
   {
     id: 3,
     title: 'Medical Check-Up (If Required)',
     description: 'Depending on your age, policy amount, or medical history, a basic health check-up may be scheduled at your home or nearby clinic—at no extra cost.',
-    icon: '🩺'
   },
   {
     id: 4,
     title: 'Get Your Policy Issued',
     description: 'After successful verification and approval, your policy document is issued and delivered digitally or physically. You are now officially covered.',
-    icon: '📄'
   },
   {
     id: 5,
     title: 'Easy Claim Settlement',
     description: 'In the event of a claim, your nominee can submit documents online. Our team works with the insurer to ensure fast, smooth, and transparent settlement.',
-    icon: '🧾'
   }
 ];
 

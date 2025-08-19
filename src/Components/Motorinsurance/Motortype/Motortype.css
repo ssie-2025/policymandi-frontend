@@ -36,6 +36,7 @@
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   height: 250px;
+  
 }
 
 .motor-services-section .motor-service-card:hover {
@@ -47,13 +48,12 @@
     margin-top: -100px;
   width: 70px;
   margin-bottom: 15px;
+filter: invert(2);
 }
 .motor-services-section .motor-service-card h3{
-    background: linear-gradient(to right, #ff5a3c, #fff); 
-    background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: #ccc;
 }
 .motor-services-section .motor-service-card p{
     font-size: 0.8rem;
+    color: #d1d1d1;
 }

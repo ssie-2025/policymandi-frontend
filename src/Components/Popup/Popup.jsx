@@ -1,6 +1,5 @@
 import React,{ useState, useEffect} from 'react'
 import './Popup.css'
-import { handleLogin, handleChange } from '../../Components/Login/Login'
 
 function Popup() {
     const [showPopup, setShowPopup] = useState(false);
@@ -27,10 +26,10 @@ function Popup() {
             </button>
             {isLogin ? (
               <div>
-                <form onSubmit={handleLogin}>
+                <form>
                 <h2>Login</h2>
-                <input type="email" placeholder="Email" onChange={handleChange} />
-                <input type="password" placeholder="Password" onChange={handleChange} />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
                 <button className="btn">Login</button>
                 <p>
                   Don’t have an account?{" "}

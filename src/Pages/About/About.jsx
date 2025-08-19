@@ -10,6 +10,7 @@ import Introduction from '../../Components/Introduction/Introduction'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import TabCalculator from '../../Components/TabCalculator/TabCalculator'
 import GetTouch from '../../Components/GetTouch/GetTouch'
+import FaqSection from '../../Components/FaqSection/FaqSection'
 
 function About() {
   return (
@@ -23,7 +24,8 @@ function About() {
     <Ourmission/>
     <Whyus/>
     <Corevalue/>
-    <Acoordion/>
+    {/* <Acoordion/> */}
+      <FaqSection/>
     <GetTouch/>
     </>
   )

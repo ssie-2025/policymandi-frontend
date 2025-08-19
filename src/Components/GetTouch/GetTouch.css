@@ -28,8 +28,16 @@
     -webkit-text-fill-color: transparent;
     color: #2e3c53;
     margin-bottom: 10px;
+    font-size: 1rem;
 }
-
+.get-contact-section .form-container p{
+    color:  #ccc;
+}
+.get-contact-section .form-container hr{
+    width: 100px;
+    margin: 0;
+    background-color: orangered;
+}
 .get-contact-section .contact-form {
     display: flex;
     flex-direction: column;
@@ -48,6 +56,7 @@
     border-bottom: 1px solid #fff;
     border-radius: 4px;
     resize: none;
+    color: #fff;
 }
 
 .get-contact-section .contact-form button {

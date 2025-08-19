@@ -20,7 +20,14 @@ function Contactpage() {
                     <div className="contact-details">
                         <select>
                             <option value="+971">+91</option>
-                            {/* Add more country codes as needed */}
+                            <option value="+971">+1</option>
+                            <option value="+971">+44</option>
+                            <option value="+971">+61</option>
+                            <option value="+971">+971</option>
+                            <option value="+971">+966</option>
+                            <option value="+971">+65</option>
+                            <option value="+971">+49</option>
+                            <option value="+971">+81</option>
                         </select>
                         <input type="text" placeholder="Enter your contact number" />
                     </div>

@@ -1,79 +1,188 @@
-import React from 'react'
+import React , { useState }from 'react'
 import './insurancematter.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
 
-import { Navigation } from 'swiper/modules';
-import img1 from '../../assets/slider1.jpg'
-import img2 from '../../assets/slider2.jpg'
-import img3 from '../../assets/slider3.jpg'
-import img4 from '../../assets/slider4.jpg'
-import img5 from '../../assets/slider5.jpg'
-import img6 from '../../assets/slider6.jpg'
+import img1 from '../../assets/slider1.jpg';
+import img2 from '../../assets/slider2.jpg';  
+import img3 from '../../assets/slider3.jpg';
+import img4 from '../../assets/slider4.jpg';
+import img5 from '../../assets/slider5.jpg';
+import img6 from '../../assets/slider6.jpg';
+import short_video from '../../assets/lifeinsurance/short-video.mp4'
 
 function Insurancematter() {
-    const slides = [
-  {
-    img: img1,
-    title: 'Security for Your Family',
-    desc: 'If something happens to you, your loved ones won’t struggle financially. They’ll have the support they need to move forward.'
-  },
-  {
-    img: img2,
-    title: 'Support During Emergencies',
-    desc: 'Hospital bills, accidents, or sudden loss — insurance helps you handle costs without draining your savings.'
-  },
-  {
-    img: img3,
-    title: 'Protection for What You Own',
-    desc: 'Your car, bike, home, or business — insurance protects what you’ve worked hard to build.'
-  },
-  {
-    img: img4,
-    title: 'Freedom from Financial Worries',
-    desc: 'You can live, work, and plan freely — knowing that insurance has your back when life throws a curveball.'
-  },
-  {
-    img: img5,
-    title: 'Avoid Big Financial Losses',
-    desc: 'A small premium today saves you from huge, unexpected expenses tomorrow.'
-  },
-  {
-    img: img6,
-    title: 'Peace of Mind for the Future',
-    desc: 'Insurance gives you confidence that no matter what happens, you and your family are prepared and protected.'
-  },
-];
+    const cardsData = [
+    { 
+      image: img1,
+      title: "Security for Your Family",
+      description: "If something happens to you, your loved ones won’t struggle financially. They’ll have the support they need to move forward."
+    },
+    { 
+      image: img2,
+      title: "Support During Emergencies",
+      description: "Hospital bills, accidents, or sudden loss — insurance helps you handle costs without draining your savings."
+    },
+    {
+      image: img3,
+      title: "Protection for What You Own",
+      description: "Your car, bike, home, or business — insurance protects what you’ve worked hard to build."
+    },
+     {
+      image: img4,
+      title: "Freedom from Financial Worries",
+      description: "You can live, work, and plan freely — knowing that insurance has your back when life throws a curveball."
+    },
+     {
+      image: img5,
+      title: "Avoid Big Financial Losses",
+      description: "A small premium today saves you from huge, unexpected expenses tomorrow."
+    },
+     {
+      image: img6,
+      title: "Peace of Mind for the Future",
+      description: "Insurance gives you confidence that no matter what happens, you and your family are prepared and protected."
+    }
+  ];
+  
+
+    const [startIdx, setStartIdx] = useState(0);
+       const cardsToShow = 2;
+   
+       const handleNext = () => {
+           if (startIdx + cardsToShow < cardsData.length) {
+               setStartIdx(startIdx + cardsToShow);
+           }
+       };
+   
+       const handlePrev = () => {
+           if (startIdx - cardsToShow >= 0) {
+               setStartIdx(startIdx - cardsToShow);
+           }
+       };
   return (
-    <section className="actus-section">
-      <h2 className="actus-title">Why Insurance Matter For Us?</h2>
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={20}
-        navigation
-        modules={[Navigation]}
-        breakpoints={{
-          640: { slidesPerView: 1 },
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 }
-        }}
-        className="actus-swiper"
-      >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="actus-card">
-              <img src={slide.img} alt={slide.title} />
-              <div className="card-content">
-                <h3>{slide.title}</h3>
-                <p>{slide.desc}</p>
-              </div>
+     <div className="work-flow-container">
+             <div className="work-flow-top">
+         <div className="work-flow-text">
+             <p>Why Insurance Matters to Us</p>
+             <div className="showcase">
+                 <video src={short_video} autoPlay loop muted></video>
+                 <h2>Protecting What<br/> Truly Counts</h2>
+             </div>
+              
+              <h4>Insurance matters because it protects what we value most<br/>
+               — our health, family, and future — giving us peace of mind <br/>
+               against life’s uncertainties.</h4>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
+     
+            
+            
+           <div className="work-flow-cards">
+             <div className="work-flow-navigation">
+             <button onClick={handlePrev} disabled={startIdx === 0}>←</button>
+             <button onClick={handleNext} disabled={startIdx + cardsToShow >= cardsData.length}>→</button>
+           </div>
+             {cardsData.slice(startIdx, startIdx + cardsToShow).map((card, idx) => (
+               <div className="work-flow-card" key={idx}>
+                 <img src={card.image} alt={card.title} />
+                 <div className="work-flow-card-content">
+                   <h3>{card.title}</h3>
+                   <p>{card.description}</p>
+                 </div>
+     
+               </div>
+               
+             ))}
+           </div>
+           
+         </div>
+         </div>
   )
 }
 
 export default Insurancematter
+
+
+
+
+
+
+
+
+// import React from 'react'
+// import './insurancematter.css'
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+
+// import { Navigation } from 'swiper/modules';
+// import img1 from '../../assets/slider1.jpg'
+// import img2 from '../../assets/slider2.jpg'
+// import img3 from '../../assets/slider3.jpg'
+// import img4 from '../../assets/slider4.jpg'
+// import img5 from '../../assets/slider5.jpg'
+// import img6 from '../../assets/slider6.jpg'
+
+// function Insurancematter() {
+//     const slides = [
+//   {
+//     img: img1,
+//     title: 'Security for Your Family',
+//     desc: 'If something happens to you, your loved ones won’t struggle financially. They’ll have the support they need to move forward.'
+//   },
+//   {
+//     img: img2,
+//     title: 'Support During Emergencies',
+//     desc: 'Hospital bills, accidents, or sudden loss — insurance helps you handle costs without draining your savings.'
+//   },
+//   {
+//     img: img3,
+//     title: 'Protection for What You Own',
+//     desc: 'Your car, bike, home, or business — insurance protects what you’ve worked hard to build.'
+//   },
+//   {
+//     img: img4,
+//     title: 'Freedom from Financial Worries',
+//     desc: 'You can live, work, and plan freely — knowing that insurance has your back when life throws a curveball.'
+//   },
+//   {
+//     img: img5,
+//     title: 'Avoid Big Financial Losses',
+//     desc: 'A small premium today saves you from huge, unexpected expenses tomorrow.'
+//   },
+//   {
+//     img: img6,
+//     title: 'Peace of Mind for the Future',
+//     desc: 'Insurance gives you confidence that no matter what happens, you and your family are prepared and protected.'
+//   },
+// ];
+//   return (
+//     <section className="actus-section">
+//       <h2 className="actus-title">Why Insurance Matter For Us?</h2>
+//       <Swiper
+//         slidesPerView={1}
+//         spaceBetween={20}
+//         navigation
+//         modules={[Navigation]}
+//         breakpoints={{
+//           640: { slidesPerView: 1 },
+//           768: { slidesPerView: 2 },
+//           1024: { slidesPerView: 3 }
+//         }}
+//         className="actus-swiper"
+//       >
+//         {slides.map((slide, index) => (
+//           <SwiperSlide key={index}>
+//             <div className="actus-card">
+//               <img src={slide.img} alt={slide.title} />
+//               <div className="card-content">
+//                 <h3>{slide.title}</h3>
+//                 <p>{slide.desc}</p>
+//               </div>
+//             </div>
+//           </SwiperSlide>
+//         ))}
+//       </Swiper>
+//     </section>
+//   )
+// }
+
+// export default Insurancematter

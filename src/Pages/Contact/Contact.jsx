@@ -4,13 +4,15 @@ import Contactsection from '../../Components/Contactus/Contactsection/Contactsec
 import Contactmap from '../../Components/Contactus/Contactmap/Contactmap'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import Contactpage from '../../Components/Contactus/Contactpage/Contactpage'
+import Bcontact from '../../Components/Bcontact/Bcontact'
 
 function Contact() {
   return (
     <>
-    <Heroabout heading="Contact Us" />
+    
     <Scrolltopbtn/>
-    <Contactpage/>
+    <Bcontact/>
+    {/* <Contactpage/> */}
     {/* <Contactsection/> */}
     <Contactmap/>
     </>

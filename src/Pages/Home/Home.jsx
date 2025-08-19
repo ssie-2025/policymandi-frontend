@@ -14,7 +14,8 @@ import Testimonial from '../../Components/Testimonial/Testimonial';
 import TabCalculator from '../../Components/TabCalculator/TabCalculator';
 import GetTouch from '../../Components/GetTouch/GetTouch';
 import Quickaccess from '../../Components/Quickaccess/Quickaccess'
-// import Popup from '../../Components/Popup/Popup';
+import Popup from '../../Components/Popup/Popup';
+import Bcontact from '../../Components/Bcontact/Bcontact';
 
 
 
@@ -22,7 +23,7 @@ function Home() {
   return (
     <>
       <Hero/>
-      {/* <Popup/> */}
+      <Popup/>
       <Chatbot/>
       <Scrolltopbtn/>
       <Heading  title='Why Choose PolicyMandi?'/>
@@ -34,9 +35,9 @@ function Home() {
       <Heading  title='Our Parters' subTitle="Secure your future with leading insurance partners"/>
       <Brandcarousel/>
       <Bannersection/>
-      <GetTouch/>
       <Whylifeinsurance/>
       <Testimonial/>
+      
     </>
   )
 }

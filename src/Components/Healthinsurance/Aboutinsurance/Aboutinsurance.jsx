@@ -7,7 +7,7 @@ function Aboutinsurance() {
     <section className="health-about-section">
       <div className="about-container">
         <div className="about-content">
-          <h2>🤝 Why Health Insurance from PolicyMandi?</h2>
+          <h2> Why Health Insurance from PolicyMandi?</h2>
           <h4>Trusted Advice. Transparent Plans. Total Peace of Mind.</h4>
           <p>
             Vivamus fermentum magna non faucibus dignissim. Sed a venenatis mi, vel

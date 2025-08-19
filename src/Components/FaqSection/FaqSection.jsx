@@ -1,26 +1,25 @@
 import React, { useState } from 'react'
-import './Accordion.css';
+import './FaqSection.css'
+import left_img from '../../assets/family-img.jpg'
 
-function Acoordion() {
 
-  const [openIndex, setOpenIndex] = useState(0); 
+function FaqSection() {
+   const [openIndex, setOpenIndex] = useState("false");
 
-  const toggle = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  
-};
-
+   const toggle = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+   }
   return (
-    <section className="faq-section">
+    <section className="faq-container">
       <div className="faq-left">
         <h2>Frequently asked <span>questions</span></h2>
-        <p>
+        <p className='faq-desc'>
           Choose a plan that fits your plan needs and budget. No hidden fees,
           no surprises—just straightforward pricing for powerful plan management.
         </p>
       </div>
 
-      <div className="faq-right">
+      <div className="faq-list">
         <div className={`faq-item ${openIndex === 0 ? 'open' : ''}`} onClick={() => toggle(0)}>
           <div className="faq-question">
             What is PolicyMandi?
@@ -86,8 +85,11 @@ function Acoordion() {
            2. Contact our support team to guide you through the buisness</div>}
         </div>
       </div>
+      <div className="faq-right">
+        <img src={left_img} alt="Happy family image" />
+      </div>
     </section>
   )
 }
 
-export default Acoordion
+export default FaqSection

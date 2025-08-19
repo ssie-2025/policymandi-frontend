@@ -31,7 +31,7 @@
 }
 
 .what-card {
-  background: linear-gradient(#004d40, #012b24);
+  background: #000;
   color: white;
   padding: 25px 20px;
   border-bottom-left-radius: 30px;
@@ -43,7 +43,7 @@
 }
 
 .what-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
 }
 
 .what-tag {
@@ -59,11 +59,12 @@
 .what-card-title {
   font-size: 1.2rem;
   font-weight: 700;
+  color: orangered;
   margin-bottom: 10px;
 }
 
 .what-card-desc {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   color: #e0e0e0;
 }
 

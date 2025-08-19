@@ -47,7 +47,7 @@ function Benefithealth() {
 
           {services.map((service, index) => (
             <div className="ai-box" key={index}>
-             <marquee>   <img src={service.icon} alt="service-icon" className="ai-icon" /></marquee>
+             <marquee direction="right">   <img src={service.icon} alt="service-icon" className="ai-icon" /></marquee>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>

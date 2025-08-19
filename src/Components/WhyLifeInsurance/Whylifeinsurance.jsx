@@ -23,7 +23,7 @@ function Whylifeinsurance() {
         {/* Accordion 1 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(1)}>
-            ✅ 1. Financial Security for Your Family
+             1. Financial Security for Your Family
             <span>{openIndex === 1 ? "▲" : "▼"}</span>
           </div>
           {openIndex === 1 && (
@@ -36,7 +36,7 @@ function Whylifeinsurance() {
         {/* Accordion 2 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(2)}>
-            ✅ 2. Covers Loans & Liabilities
+             2. Covers Loans & Liabilities
             <span>{openIndex === 2 ? "▲" : "▼"}</span>
           </div>
           {openIndex === 2 && (
@@ -49,7 +49,7 @@ function Whylifeinsurance() {
         {/* Accordion 3 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(3)}>
-            ✅ 3. Peace of Mind
+             3. Peace of Mind
             <span>{openIndex === 3 ? "▲" : "▼"}</span>
           </div>
           {openIndex === 3 && (
@@ -62,7 +62,7 @@ function Whylifeinsurance() {
         {/* Accordion 4 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(4)}>
-            ✅ 4. Affordable Protection
+             4. Affordable Protection
             <span>{openIndex === 4 ? "▲" : "▼"}</span>
           </div>
           {openIndex === 4 && (
@@ -75,7 +75,7 @@ function Whylifeinsurance() {
         {/* Accordion 5 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(5)}>
-            ✅ 5. Tax Benefits
+             5. Tax Benefits
             <span>{openIndex === 5 ? "▲" : "▼"}</span>
           </div>
           {openIndex === 5 && (
@@ -88,7 +88,7 @@ function Whylifeinsurance() {
         {/* Accordion 6 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(6)}>
-            ✅ 6. Build Long-Term Wealth (ULIPs & Endowment Plans)
+             6. Build Long-Term Wealth (ULIPs & Endowment Plans)
             <span>{openIndex === 6 ? "▲" : "▼"}</span>
           </div>
           {openIndex === 6 && (

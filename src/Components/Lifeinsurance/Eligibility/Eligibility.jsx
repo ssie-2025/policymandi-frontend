@@ -4,19 +4,19 @@ import './Eligibility.css'
 
 const steps = [
   {
-    title: "📅 Age Range",
+    title: "Age Range",
     description:
       "Life insurance is typically available for individuals aged 18 to 65 years, with coverage lasting up to 75 or 85 years depending on the plan. Starting early helps you enjoy lower premiums and longer coverage.",
     
   },
   {
-    title: "🩺 Health Requirements",
+    title: "Health Requirements",
     description:
       "Life insurance providers may require a health declaration and sometimes a medical exam, depending on your age and coverage. Healthy individuals often get faster approvals and lower premiums.",
  
   },
   {
-    title: "👨‍💼 Occupation (If Applicable)",
+    title: "Occupation (If Applicable)",
     description: "Your occupation affects your life insurance premium. Low-risk jobs face no issues, while high-risk professions may lead to higher premiums or special conditions.",
     
   },

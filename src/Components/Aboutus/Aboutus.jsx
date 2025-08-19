@@ -1,6 +1,6 @@
 import React from 'react'
 import './Aboutus.css'
-import about_img1 from '../../assets/about_img1.jpeg'
+import about_img1 from '../../assets/about.jpg' 
 
 function Aboutus() {
   return (

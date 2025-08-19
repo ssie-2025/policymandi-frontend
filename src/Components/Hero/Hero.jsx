@@ -6,28 +6,33 @@ import ban_img1 from '../../assets/ban-img1.jpg'
 import ban_img2 from '../../assets/ban-img2.jpg'
 import ban_img3 from '../../assets/ban-img3.jpg'
 import "./Hero.css"
+import GetTouch from '../GetTouch/GetTouch';
 
 function Hero() {
     const banners = [
-        ban_img1,
+        <GetTouch key="custom" />,
         ban_img2,
         ban_img3,
     ];
 
     return (
-        <div className="banner-slider">
-            <Swiper
-                modules={[Autoplay]}
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
-                loop={true}
-            >
-                {banners.map((img, index) => (
-                    <SwiperSlide key={index}>
-                        <img src={img} alt={`Banner ${index}`} className="banner-img" />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
+       <div className="banner-slider">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+      >
+        {banners.map((item, index) => (
+          <SwiperSlide key={index}>
+            {typeof item === "string" ? (
+              <img src={item} alt={`Banner ${index}`} className="banner-img" />
+            ) : (
+              item
+            )}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
     )
 }
 

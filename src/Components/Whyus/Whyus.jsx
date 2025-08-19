@@ -13,7 +13,7 @@ function Whyus() {
           <h1>Your Trusted Insurance Partner</h1>
           <p>Get expert advice, transparent pricing, and coverage tailored just for you.</p>
           <div className="hero-buttons">
-            <button className="btn btn-primary"><Link to="/calculator">Get a Quote</Link></button>
+           <Link to="/calculator"> <button className="btn btn-primary">Get a Quote</button></Link>
             <button className="btn btn-secondary">Learn More</button>
           </div>
         </div>

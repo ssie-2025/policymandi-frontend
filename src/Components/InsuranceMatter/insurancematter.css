@@ -1,4 +1,121 @@
-.actus-section {
+.insurance-matter-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 5%;
+  background: #000;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(44, 44, 44, 0.07);
+}
+
+.insurance-matter-section .left-content {
+  max-width: 400px;
+}
+
+.insurance-matter-section .title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0c3d3e;
+  margin-bottom: 10px;
+}
+
+.insurance-matter-section .subtitle {
+  font-size: 1.2rem;
+  color: #ff5a3c;
+  margin-bottom: 18px;
+}
+
+.insurance-matter-section .description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.insurance-matter-section .right-slider {
+  width: 580px;
+  max-width: 100%;
+}
+
+.insurance-matter-section .card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44,44,44,0.09);
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.insurance-matter-section .card:hover {
+  box-shadow: 0 8px 32px rgba(44,44,44,0.15);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.insurance-matter-section .card-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-bottom: 2px solid #e6ede0;
+}
+
+.insurance-matter-section .card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.insurance-matter-section .card:hover .card-image {
+  transform: scale(1.07);
+}
+
+.insurance-matter-section .card-content {
+  padding: 1.2rem 1rem 0.5rem 1rem;
+  text-align: center;
+}
+
+.insurance-matter-section .card-content h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0c3d3e;
+  margin-bottom: 0.7rem;
+}
+
+.insurance-matter-section .card-content p {
+  font-size: 0.98rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Slick dots customization */
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #0c3d3e;
+  opacity: 0.5;
+}
+.slick-dots li.slick-active button:before {
+  color: #ff5a3c;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .insurance-matter-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 2%;
+  }
+  .insurance-matter-section .right-slider {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* .actus-section {
   padding: 60px 20px;
   background-color: #0b090a;
   color: #ffffff;
@@ -50,7 +167,7 @@
 }
 
 /* Swiper navigation buttons */
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
   color: white;
-}
+}  */

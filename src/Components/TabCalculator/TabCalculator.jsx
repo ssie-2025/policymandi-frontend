@@ -36,9 +36,7 @@ function TabCalculator() {
 
                 <div className="tab-content">
                     {activeTab === "tab1" && (
-
                         <PremiumCalculator />
-
                     )}
                     {activeTab === "tab2" && (
                         <CoverageCalculator />

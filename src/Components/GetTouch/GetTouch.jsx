@@ -23,6 +23,8 @@ function GetTouch() {
       if (data.success) {
         setResult("Form Submitted Successfully");
         event.target.reset();
+      } else if (data.value === "") {
+        setResult("Please fill all the fields");
       } else {
         console.log("Error", data);
         setResult(data.message);
@@ -34,14 +36,16 @@ function GetTouch() {
   return (
     <div className="get-contact-section">
       <div className="form-container">
-        <h2>📞 Get in Touch with PolicyMandi</h2>
+        <h2> Get in Touch with PolicyMandi</h2>
+             <hr/>  
         <p>Your insurance journey starts here. Talk to our experts today.</p>
+           
         <form className="contact-form" onSubmit={onSubmit}>
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="Email" />
-          <input type="text" placeholder="Phone Number" />
-          <input type="text" placeholder="Subject" />
-          <textarea placeholder="Message"></textarea>
+          <input type="text" placeholder="Name" name='name' required/>
+          <input type="email" placeholder="Email" name='email' required/>
+          <input type="text" placeholder="Phone Number" name='phone' required/>
+          <input type="text" placeholder="Subject" name='subject' required/>
+          <textarea placeholder="Message" name='message' required></textarea>
           <button type="submit">Send Message</button>
         </form>
          <span> {result}</span>
