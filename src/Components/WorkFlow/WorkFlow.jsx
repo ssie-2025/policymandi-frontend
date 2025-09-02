@@ -1,5 +1,5 @@
 import React , { useState }from 'react'
-import './WorkFlow.css'
+import './Workflow.css'
 import workflow1 from '../../assets/lifeinsurance/workflow1.jpg'
 import workflow2 from '../../assets/lifeinsurance/workflow2.jpg'
 import workflow3 from '../../assets/lifeinsurance/workflow3.jpg'
