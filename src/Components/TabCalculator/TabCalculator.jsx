@@ -5,45 +5,52 @@ import PremiumCalculator from '../Calculator/PremiumCalculator';
 import CoverageCalculator from '../Calculator/CoverageCalculator';
 import MaturityCalculator from '../Calculator/MaturityCalculator';
 import '../Healthinsurance/Tab/Tab.css'
+import { Link } from 'react-router-dom';
 
 function TabCalculator() {
-    const [activeTab, setActiveTab] = useState("tab1");
+    const cards = [
+        {
+            title: "Premium Calculator",
+            description: "Estimate your premium and coverage for life insurance easily.",
+            button1: "Calculate",
+            button2: "Learn More",
+            link: '/calculator',
+        },
+        {
+            title: "Coverage Calculator",
+            description: "Find out the right health coverage and premium for you & family.",
+            button1: "Calculate",
+            button2: "Learn More",
+            link: '/calculator'
+        },
+        {
+            title: "Maturity Calculator",
+            description: "Get premium quotes for your car or bike instantly.",
+            button1: "Calculate",
+            button2: "Learn More",
+            link: '/calculator'
+        }
+    ];
 
-    const handleTabClick = (tab) => {
-        setActiveTab(tab);
-    }
     return (
         <>
-            <div className="tab-container">
-                <div className="tab-header">
-                    <button
-                        className={activeTab === "tab1" ? "active Tab" : "tab"}
-                        onClick={() => handleTabClick("tab1")} >
-                        Premium Calculator
-                    </button>
-                    <button
-                        className={activeTab === "tab2" ? "active tab" : "tab"}
-                        onClick={() => handleTabClick("tab2")}>
-                        Coverage Calculator
-                    </button>
-                    <button
-                        className={activeTab === "tab3" ? "active tab" : "tab"}
-                        onClick={() => handleTabClick("tab3")}>
+            <div className="calculator-container">
+                <h2 className="title">Insurance Calculators</h2>
+                <p className="subtitle">
+                    Select a calculator to estimate your premium and coverage instantly.
+                </p>
 
-                        Maturity Calculator
-                    </button>
-                </div>
-
-                <div className="tab-content">
-                    {activeTab === "tab1" && (
-                        <PremiumCalculator />
-                    )}
-                    {activeTab === "tab2" && (
-                        <CoverageCalculator />
-                    )}
-                    {activeTab === "tab3" && (
-                        <MaturityCalculator />
-                    )}
+                <div className="card-wrapper">
+                    {cards.map((card, index) => (
+                        <div key={index} className="calculator-card">
+                            <h3>{card.title}</h3>
+                            <p>{card.description}</p>
+                            <div className="buttons">
+                               <Link to={card.link}> <button className="btn-primary">{card.button1}</button></Link>
+                               <Link to={card.link}>  <button className="btn-secondary">{card.button2}</button></Link>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </>

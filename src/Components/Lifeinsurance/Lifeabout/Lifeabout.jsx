@@ -1,6 +1,6 @@
 import React from 'react'
 import './Lifeabout.css'
-import lifeinsurance from '../../../assets/lifeinsurance/lifeinsurance1.jpg'
+import lifeinsurance from '../../../assets/aboutImg.png'
 
 function Lifeabout() {
   return (
@@ -14,30 +14,23 @@ function Lifeabout() {
         </div>
 
         <div className="text-section">
-          <div className="label">About Us</div>
           <h2>Life Insurance<br />with Policy Mandi</h2>
           <p>
-           Secure your family’s future, today.
+            Protect What Matters Most – Your Family’s Future
             <br />
             <br />
-           At Policy Mandi, we help you find the perfect life insurance plan — 
-           one that gives your loved ones financial protection, peace of mind,
-           and a strong foundation for tomorrow.
-           </p>
-          <div className="stats">
-            <div>
-              <strong>20+</strong>
-              <p>Experience Staff</p>
-            </div>
-            <div>
-              <strong>10k+</strong>
-              <p>Plans succsfull</p>
-            </div>
-            <div>
-              <strong>20k</strong>
-              <p>Happy clint</p>
-            </div>
-          </div>
+            Life is uncertain, but your family’s security doesn’t have to be.
+            At Policy Mandi, we make it simple to choose the right life
+            insurance plan that ensures your loved ones are financially
+            protected, no matter what tomorrow brings.
+          </p>
+          <p>
+            Whether you’re planning for your children’s education, securing your family’s
+            lifestyle, or leaving behind a lasting legacy, our tailored solutions offer: <br /> <br />
+
+           <b> &#8594; Comprehensive Coverage – </b>safeguard your family against life’s uncertainties.<br />
+           <b> &#8594;  Affordable Premiums – </b>plans that fit every budget without compromise.<br />
+          </p>
 
           <button className="cta-button">Begin Your Insurance Journey</button>
         </div>

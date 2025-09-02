@@ -1,6 +1,6 @@
 import React from 'react'
 import './Motorabout.css'
-import about_img from '../../../assets/motoinsurance/img_about1.png'
+import about_img from '../../../assets/motoinsurance/aboutImg2.png'
 
 function Motorabout() {
   return (

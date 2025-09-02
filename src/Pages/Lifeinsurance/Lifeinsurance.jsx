@@ -13,6 +13,7 @@ import Heroabout from '../../Components/HeroAbout/Heroabout'
 import GetTouch from '../../Components/GetTouch/GetTouch'
 import CoverageCalculator from '../../Components/Calculator/CoverageCalculator'
 import WorkFlow from '../../Components/WorkFlow/WorkFlow'
+import FaqSection from '../../Components/FaqSection/FaqSection'
 
 function Lifeinsurance() {
   return (
@@ -27,7 +28,8 @@ function Lifeinsurance() {
     <Howitwork/>
     <WorkFlow/>
     {/* <Claimsettlement/> */}
-    <Faq/>
+    {/* <Faq/> */}
+    <FaqSection/>
     <Contact/>
     </>
   )

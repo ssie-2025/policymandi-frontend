@@ -15,8 +15,7 @@ import TabCalculator from '../../Components/TabCalculator/TabCalculator';
 import GetTouch from '../../Components/GetTouch/GetTouch';
 import Quickaccess from '../../Components/Quickaccess/Quickaccess'
 import Popup from '../../Components/Popup/Popup';
-import Bcontact from '../../Components/Bcontact/Bcontact';
-
+import InsuranceType from '../../Components/InsuranceType/InsuranceType';
 
 
 function Home() {
@@ -26,8 +25,9 @@ function Home() {
       <Popup/>
       <Chatbot/>
       <Scrolltopbtn/>
-      <Heading  title='Why Choose PolicyMandi?'/>
-      <Feature/>
+      {/* <Heading  title='Why Choose PolicyMandi?'/> */}
+      <InsuranceType/>
+      {/* <Feature/> */}
       <Whatweserve/>
       <TabCalculator/>
       <Quickaccess/>

@@ -33,7 +33,7 @@ function Types() {
      <section className="type-section">
       <div className="type-container">
         <div className="type-header">
-          <h2>🩺 Types of Health Insurance Plans</h2>
+          <h2>Types of Health Insurance Plans</h2>
           <p className="description">
             At PolicyMandi, we help you choose from a wide range of health
             insurance plans tailored to your unique needs. Here's a quick

@@ -1,0 +1,117 @@
+.insurance-type-section {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+  padding: 60px 20px;
+}
+
+.insurance-type-section .insurance-type-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Left side */
+.insurance-type-section .insurance-left{
+    flex: 1;
+}
+.insurance-type-section .insurance-left .small-heading {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.insurance-type-section .insurance-left .main-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.insurance-type-section .insurance-left .description {
+  margin-bottom: 25px;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+.insurance-type-section .btn-primary {
+  background: white;
+  color: orangered;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.insurance-type-section .btn-primary:hover {
+  background: #e5e7eb;
+  color: #000;
+}
+
+/* Right side */
+.insurance-type-section .insurance-right {
+    flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.insurance-type-section .policy-card {
+  background: white;
+  color: #111827;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(27, 27, 27, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.insurance-type-section .policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.insurance-type-section .policy-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.insurance-type-section .policy-card .location {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.insurance-type-section .policy-card .type {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
+
+.insurance-type-section .btn-link {
+background: none;
+  border: none;
+  color: orangered;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.insurance-type-section .btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .insurance-type-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .insurance-type-container .insurance-right {
+    grid-template-columns: 1fr;
+  }
+}

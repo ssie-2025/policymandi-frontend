@@ -1,9 +1,6 @@
 import React from 'react'
 import './Motorwhybuy.css'
-import img1 from '../../../assets/motoinsurance/img1.jpeg'
-import img2 from '../../../assets/motoinsurance/img2.jpg'
-import img3 from '../../../assets/motoinsurance/img3.jpg'
-import img4 from '../../../assets/motoinsurance/img4.jpg'
+import side_img from '../../../assets/motoinsurance/aboutImg3.png'
 import { RiDoubleQuotesR } from "react-icons/ri";
 
 function Motorwhybuy() {
@@ -12,10 +9,7 @@ function Motorwhybuy() {
       <div className="education-container">
         <div className="left-column">
           <div className="image-grid">
-            <img src={img1} alt="Teacher" className="grid-image" />
-            <img src={img2} alt="Students" className="grid-image" />
-            <img src={img3} alt="Laptop Study" className="grid-image" />
-            <img src={img4} alt="Learning" className="grid-image" />
+            <img src={side_img} alt="" />
           </div>
           
         </div>

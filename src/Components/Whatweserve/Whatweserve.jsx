@@ -1,46 +1,71 @@
 import React from 'react'
 import './Whatweserve.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 function Whatweserve() {
-    const services = [
-  {
-    tag: 'Protect What Matters Most',
-    title: 'Life Insurance',
-    description: "Life insurance is a smart financial tool that ensures your loved ones are financially protected in case of unforeseen events. Whether it's covering future expenses, outstanding loans, or long-term goals, a life insurance policy offers peace of mind and stability when it matters most.",
-  },
-  {
-    tag: 'Drive Safe. Stay Covered',
-    title: 'Motor Insurance',
-    description: "Motor insurance provides financial protection against damages or loss to your vehicle due to accidents, theft, fire, or natural disasters. It also covers third-party liability, ensuring legal compliance and peace of mind while driving.",
-  },
-  {
-    tag: 'Your Health. Our Priority.',
-    title: 'Health Insurance',
-    description: "Health insurance provides financial protection against medical expenses arising from illness, injury, hospitalization, or surgery. It ensures you get quality treatment without worrying about high healthcare costs.",
-  },
-  {
-    tag: 'Travel Far. Stay Protected',
-    title: 'Travel Insurance',
-    description: "Travel insurance offers financial protection against unexpected events such as trip cancellations, medical emergencies, lost baggage, flight delays, and more. It ensures a stress-free journey—whether you're traveling domestically or abroad.",
-  },
-];
-  return (
-     <section className="what-section">
-      <div className="what-header">
-        <h4 className="what-subtitle">What We Serve</h4>
-        <h2 className="what-title">Insurance for Every Need</h2>
-      </div>
+    const cards = [
+    {
+      title: "Health Insurance",
+      subtitle: "Book Free Health Insurance Consultation at home",
+      button: "Book home visit",
+      color: "#2980b9"
+    },
+    {
+      title: "SIP Calculator",
+      subtitle: "Reach your financial goals. Make investment simple.",
+      button: "Calculate Now",
+      color: "#e74c3c"
+    },
+    {
+      title: "Health Insurance",
+      subtitle: "Book Free Health Insurance Consultation at home",
+      button: "Book home visit",
+      color: "#2980b9"
+    },
+    {
+      title: "SIP Calculator",
+      subtitle: "Reach your financial goals. Make investment simple.",
+      button: "Calculate Now",
+      color: "#e74c3c"
+    }
+    
+  ];
 
-      <div className="what-slider">
-        {services.map((item, index) => (
-          <div className="what-card" key={index}>
-            <span className="what-tag">{item.tag}</span>
-            <h3 className="what-card-title">{item.title}</h3>
-            <p className="what-card-desc">{item.description}</p>
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Show 3 cards
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768, // Mobile
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  };
+  return (
+     <div className="whatweserve-offer-container">
+      <Slider {...settings}>
+        {cards.map((card, index) => (
+          <div key={index} className="offer-card" style={{ background: card.color }}>
+            <h3>{card.title}</h3>
+            <p>{card.subtitle}</p>
+            <button>{card.button}</button>
           </div>
         ))}
-      </div>
-    </section>
+      </Slider>
+    </div>
   )
 }
 

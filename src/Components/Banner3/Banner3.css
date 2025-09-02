@@ -1,0 +1,110 @@
+.banner3-hero {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 2rem;
+  background-color: #f9fafb;
+  margin-top: -3%;
+  
+}
+
+.banner3-hero .hero-content {
+  max-width: 600px;
+}
+
+.banner3-hero .small-heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.banner3-hero .main-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.banner3-hero .description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.banner3-hero .search-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.banner3-hero .search-input,
+.banner3-hero .search-select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.banner3-hero .search-btn {
+  background: orangered;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.banner3-hero .search-btn:hover {
+  background: rgb(255, 82, 19);
+}
+
+.banner3-hero .popular {
+  font-size: 14px;
+  color: #555;
+}
+
+.banner3-hero .popular span {
+  font-weight: 600;
+  color: #000;
+}
+.banner3-hero .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.banner3-hero .hero-image img {
+    margin-top: -7%;
+    width: 450px;
+  height: auto;
+  border-radius: 12px;
+  filter: drop-shadow(1px 1px 20px rgba(0,0,0,0.4));
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+.banner3-hero  .main-heading {
+    font-size: 32px;
+  }
+
+.banner3-hero  .search-box {
+    flex-direction: column;
+  }
+
+.banner3-hero  .search-input,
+.banner3-hero  .search-select,
+.banner3-hero  .search-btn {
+    width: 100%;
+  }
+  
+.banner3-hero  .hero-image {
+    margin-top: 20px;
+  }
+}

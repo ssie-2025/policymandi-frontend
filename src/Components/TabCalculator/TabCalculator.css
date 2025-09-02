@@ -1,0 +1,85 @@
+.calculator-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9fafb;
+}
+
+.calculator-container .title {
+    color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.calculator-container .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.calculator-container .card-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.calculator-container .calculator-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+}
+
+.calculator-container .calculator-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.calculator-container .calculatorcard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.calculator-container .calculator-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.calculator-container .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.calculator-container .btn-primary {
+  background: orangered;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.calculator-container .btn-secondary {
+  background: #f3f4f6;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.calculator-container.btn-primary:hover {
+  background: #1e40af;
+}
+
+.calculator-container .btn-secondary:hover {
+  background: #e5e7eb;
+}

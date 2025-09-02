@@ -1,6 +1,6 @@
 import React from 'react'
 import './Aboutus.css'
-import about_img1 from '../../assets/about.jpg' 
+import about_img1 from '../../assets/aboutImg2.png' 
 
 function Aboutus() {
   return (
@@ -22,7 +22,7 @@ function Aboutus() {
             We believe that everyone deserves access to insurance plans that truly fit 
             their needs — without hidden terms, overwhelming paperwork, or confusing jargon. 
             Whether you're securing your health, life, vehicle, or travels, we make it easy
-             to compare, customize, and confidently choose the right policy.
+            to compare, customize, and confidently choose the right policy.
           </p>
         </div>
         <div className="about-bg-box"></div>

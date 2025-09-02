@@ -14,11 +14,12 @@ function Contact() {
           <form className="contact-form">
             <div className="input-row">
               <input type="text" placeholder="Name" />
-              <input type="email" placeholder="Email Address" />
+              <input type="email" placeholder="Last Name" />
             </div>
+            <input type="email" placeholder="Email Id" />
             <div className="input-row">
               <input type="text" placeholder="Phone Number" />
-              <input type="text" placeholder="ZIP Code" />
+              <input type="text" placeholder="PIN Code" />
             </div>
             <textarea placeholder="Message" rows="5" />
             <button type="submit">Submit</button>

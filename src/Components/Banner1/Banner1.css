@@ -1,0 +1,59 @@
+.banner1-hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 5%;
+}
+
+.banner1-hero-section .hero-text {
+  flex: 1;
+}
+
+.banner1-hero-section .hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.banner1-hero-section .hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.banner1-hero-section .hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.banner1-hero-section .btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.banner1-hero-section .btn.primary {
+  background: orangered;
+  color: #fff;
+}
+
+.banner1-hero-section .btn.secondary {
+  background: #eee;
+  color: #333;
+}
+
+.banner1-hero-section .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.banner1-hero-section .hero-image img {
+  max-width: 100%;
+  border-radius: 12px;
+ filter: drop-shadow(1px 1px 20px rgba(0,0,0,0.4)); 
+}

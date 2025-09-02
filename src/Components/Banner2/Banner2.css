@@ -1,0 +1,114 @@
+.banner-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.banner-hero .hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.banner-hero .hero-text .offer {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.banner-hero .hero-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.banner-hero .hero-text .subtext {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.banner-hero .buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.banner-hero .btn-primary {
+  padding: 12px 28px;
+  background: orangered;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.banner-hero .btn-primary:hover {
+  background: none;
+  border: 1px solid orangered;
+  color: #000
+}
+
+.banner-hero .btn-secondary {
+  padding: 12px 28px;
+  background: #000;
+  border: transparent;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.banner-hero .btn-secondary:hover {
+  background: orangered;
+  color: #fff;
+}
+
+.banner-hero .partners {
+  font-size: 14px;
+  color: #777;
+  margin-top: 15px;
+}
+
+.banner-hero .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.banner-hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  filter: drop-shadow(1px 1px 20px rgba(0,0,0,0.4));
+}
+
+/*  Responsive */
+@media (max-width: 992px) {
+  .banner-hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .banner-hero .hero-text {
+    margin-top: 30px;
+  }
+
+  .banner-hero .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .banner-hero .hero-text .subtext {
+    font-size: 15px;
+  }
+}

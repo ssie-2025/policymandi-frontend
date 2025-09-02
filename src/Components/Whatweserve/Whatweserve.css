@@ -1,74 +1,55 @@
-.what-section {
-  background: #f5f9ff;
-  padding: 60px 20px;
-  text-align: center;
+.whatweserve-offer-container{
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, #a8dadc, #ffff);
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.what-header {
-  margin-bottom: 40px;
+.whatweserve-offer-container .offer-card {
+  color: #000;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  min-height: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+     transform: translateY(-5px);
+}
+.whatweserve-offer-container .offer-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-.what-subtitle {
-  color: #ff5a3c;
-  font-weight: 600;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-}
-
-.what-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #111;
-}
-
-.what-slider {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding-bottom: 20px;
-}
-
-.what-card {
-  background: #000;
-  color: white;
-  padding: 25px 20px;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
-  min-width: 260px;
-  scroll-snap-align: start;
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.what-card:hover {
-  transform: scale(1.05);
-}
-
-.what-tag {
-  background: #0e0e0e;
-  padding: 5px 14px;
-  font-size: 0.75rem;
-  border-radius: 999px;
-  display: inline-block;
-  margin-bottom: 14px;
-  font-weight: 500;
-}
-
-.what-card-title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: orangered;
+.whatweserve-offer-container .offer-card h3 {
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.what-card-desc {
-  font-size: 0.8rem;
-  color: #e0e0e0;
+.whatweserve-offer-container .offer-card p {
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
-/* Hide scrollbar on mobile */
-.what-slider::-webkit-scrollbar {
-  display: none;
+.whatweserve-offer-container .offer-card button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.whatweserve-offer-container  .offer-card button:hover {
+  background: #f1f1f1;
 }

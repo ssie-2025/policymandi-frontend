@@ -7,7 +7,7 @@
   gap: 20px;
 }
 
-.mission-image img {
+.mission-section .mission-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
@@ -15,30 +15,33 @@
   box-shadow: 0 12px 40px rgba(0,0,0,0.12);
 }
 
-.mission-content {
+.mission-section .mission-content {
   flex: 1;
   min-width: 300px;
 }
 
-.mission-content h2 {
+.mission-section .mission-content h2 {
   font-size: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
   color: #ff5a3c;
 }
 
-.subtitle {
+.mission-section .subtitle {
   font-size: 18px;
   color: #555;
+  margin-left: 10px;
   margin-bottom: 15px;
 }
 
-.mission-desc {
+.mission-section .mission-desc {
   font-size: 16px;
   color: #333;
+  margin-left: 10px;
   margin-bottom: 50px;
 }
 
-.mission-btn {
+.mission-section .mission-btn {
     margin: 20px;
     padding: 15px 40px;
     border: none;
@@ -50,7 +53,7 @@
     border-radius: 20px;
     text-decoration: none;
 }
-.mission-btn::after{
+.mission-section .mission-btn::after{
   content: "";
     z-index: -1;
     position: absolute;
@@ -61,7 +64,7 @@
     top: 0;
     border-radius: 10px;
 }
-.mission-btn::before{
+.mission-section .mission-btn::before{
   content: "";
     background: linear-gradient(45deg,
             #FF0000, #FF7300, #FFFB00, #48FF00,
@@ -92,13 +95,13 @@
         background-position: 0 0;
     }
 }
-.mission-btn:hover::before{
+.mission-section .mission-btn:hover::before{
   opacity: 1;
 }
-.mission-btn:active::after{
+.mission-section .mission-btn:active::after{
   background: transparent;
 }
-.mission-btn:active{
+.mission-section .mission-btn:active{
   color: #000;
     font-weight: bold;
 }

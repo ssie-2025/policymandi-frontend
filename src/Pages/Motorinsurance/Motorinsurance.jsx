@@ -11,6 +11,7 @@ import Motorwhybuy from '../../Components/Motorinsurance/Motorwhybuy/Motorwhybuy
 import Motorfaq from '../../Components/Motorinsurance/Motorfaq/Motorfaq'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import PremiumCalculator from '../../Components/Calculator/PremiumCalculator'
+import FaqSection from '../../Components/FaqSection/FaqSection'
 
 function Motorinsurance() {
   return (
@@ -25,7 +26,8 @@ function Motorinsurance() {
     <PremiumCalculator/>
     <Bannersection/>
     <Motorwhybuy/>
-    <Motorfaq/>
+    {/* <Motorfaq/> */}
+    <FaqSection/>
     <Contact/>
     </>
   )

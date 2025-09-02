@@ -11,6 +11,7 @@ import Faqhealth from '../../Components/Healthinsurance/Faqhealth/Faqhealth'
 import Contact from '../../Components/Lifeinsurance/Contact/Contact'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import GetTouch from '../../Components/GetTouch/GetTouch'
+import FaqSection from '../../Components/FaqSection/FaqSection'
 
 function Healthinsurance() {
   return (
@@ -24,7 +25,8 @@ function Healthinsurance() {
    <Healthpolicy/>
    <Comparison/>
    <Tab/>
-   <Faqhealth/>
+   <FaqSection/>
+   {/* <Faqhealth/> */}
    <Contact/>
    </>
   )
