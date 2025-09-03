@@ -37,15 +37,24 @@
 }
 
 .banner1-hero-section .btn.primary {
-  background: orangered;
+  background: #F44A22;
   color: #fff;
+  transition: 0.4s ease;
+}
+.banner1-hero-section .btn.primary:hover{
+  background: transparent;
+  border: 1px solid #A8AAAC;
+  color: #161616;
 }
 
 .banner1-hero-section .btn.secondary {
   background: #eee;
   color: #333;
 }
-
+.banner1-hero-section .btn.secondary:hover{
+  background: #161616;
+  color: #fff;
+}
 .banner1-hero-section .hero-image {
   flex: 1;
   display: flex;
@@ -56,4 +65,60 @@
   max-width: 100%;
   border-radius: 12px;
  filter: drop-shadow(1px 1px 20px rgba(0,0,0,0.4)); 
+}
+@media (max-width: 900px) {
+  .banner1-hero-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 3%;
+    align-items: flex-start;
+  }
+  .banner1-hero-section .hero-text {
+    width: 100%;
+    text-align: left;
+  }
+  .banner1-hero-section .hero-image {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .banner1-hero-section .hero-image img {
+    max-width: 340px;
+    width: 90vw;
+  }
+  .banner1-hero-section .hero-text h1 {
+    font-size: 2rem;
+  }
+  .banner1-hero-section .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner1-hero-section {
+    padding: 1.2rem 1rem;
+    flex-direction: column-reverse;
+  }
+  .banner1-hero-section .hero-text h1 {
+    font-size: 1.3rem;
+  }
+  .banner1-hero-section .hero-image img {
+    max-width: 500px;
+  }
+  .banner1-hero-section .btn {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+    .banner1-hero-section .hero-buttons {
+    flex-direction: row;
+    gap: 0.7rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .banner1-hero-section .btn {
+    flex: 1 1 auto;
+    min-width: 120px;
+    max-width: 100%;
+  }
 }

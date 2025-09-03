@@ -8,7 +8,7 @@ function Whylifeinsurance() {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section className="life-insurance-section">
+    <section className="why-life-insurance-section">
       <div className="life-left">
         <h2>Why Take Life Insurance?</h2>
         <div className="underline-deco"></div>

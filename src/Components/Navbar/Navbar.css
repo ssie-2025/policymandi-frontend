@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  padding: 1rem 0;
+  padding: 0.1rem 0;
 }
 
 .main-header .container {
@@ -21,7 +21,9 @@
   font-weight: bold;
   color: #2c3e50;
 }
-
+.main-header .logo img{
+  width: 100px;
+}
 .main-header .nav ul {
   list-style: none;
   display: flex;

@@ -2,9 +2,8 @@
   width: 90%;
   margin: auto;
   padding: 20px 0;
-  background: linear-gradient(to bottom, #a8dadc, #ffff);
-  margin-top: 5%;
-  margin-bottom: 5%;
+  background: #fff;
+  margin-bottom: 10%;
 }
 
 .whatweserve-offer-container .offer-card {
@@ -25,7 +24,7 @@
 }
 .whatweserve-offer-container .offer-card:hover{
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 10px 25px #fc7355;
 }
 
 .whatweserve-offer-container .offer-card h3 {

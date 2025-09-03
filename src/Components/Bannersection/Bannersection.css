@@ -6,17 +6,17 @@
   overflow: hidden;
 }
 
-.banner-overlay {
+.banner-section .banner-overlay {
   background: linear-gradient(to right, #000, #ff5400);
   padding: 80px 20px;
 }
 
-.banner-content {
+.banner-section .banner-content {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.banner-subtitle {
+.banner-section .banner-subtitle {
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;
@@ -24,20 +24,20 @@
   margin-bottom: 10px;
 }
 
-.banner-title {
+.banner-section .banner-title {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 20px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.banner-description {
+.banner-section .banner-description {
   font-size: 1rem;
   color: #ddd;
 }
 
 
-.card-container {
+.banner-section .card-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -53,7 +53,7 @@
   margin-right: auto;
 }
 
-.card {
+.banner-section .card {
   background: #f9f9f9;
   color: #000;
   border-radius: 16px;
@@ -64,39 +64,39 @@
   transition: transform 0.3s ease;
 }
 
-.card:hover {
+.banner-section .card:hover {
   transform: translateY(-6px);
 }
 
-.card-icon {
+.banner-section .card-icon {
   font-size: 3rem;
-  color: #004d40;
+  color: #F44A22;
 }
 
-.card-title {
+.banner-section .card-title {
   font-size: 2rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.card-text {
+.banner-section .card-text {
   font-size: 0.95rem;
   color: #333;
 }
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .banner-title {
+.banner-section  .banner-title {
     font-size: 1.6rem;
   }
 
-  .card-container {
+.banner-section  .card-container {
     flex-direction: column;
     padding: 30px 10px;
   }
 
-  .card {
+.banner-section  .card {
     margin-bottom: 20px;
   }
 }

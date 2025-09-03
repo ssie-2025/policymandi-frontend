@@ -29,14 +29,15 @@ function Home() {
       <InsuranceType/>
       {/* <Feature/> */}
       <Whatweserve/>
-      <TabCalculator/>
-      <Quickaccess/>
       <Insurancematter/> 
+      <TabCalculator/>
+      {/* <Quickaccess/> */}
+      
       <Heading  title='Our Parters' subTitle="Secure your future with leading insurance partners"/>
       <Brandcarousel/>
       <Bannersection/>
       <Whylifeinsurance/>
-      <Testimonial/>
+      {/* <Testimonial/> */}
       
     </>
   )

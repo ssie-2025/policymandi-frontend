@@ -6,6 +6,7 @@ import CoverageCalculator from '../Calculator/CoverageCalculator';
 import MaturityCalculator from '../Calculator/MaturityCalculator';
 import '../Healthinsurance/Tab/Tab.css'
 import { Link } from 'react-router-dom';
+import Heading from '../Heading/Heading';
 
 function TabCalculator() {
     const cards = [
@@ -34,11 +35,9 @@ function TabCalculator() {
 
     return (
         <>
+        <Heading title="Insurance Calculators" subTitle="Select a calculator to estimate your premium and coverage instantly."/>
             <div className="calculator-container">
-                <h2 className="title">Insurance Calculators</h2>
-                <p className="subtitle">
-                    Select a calculator to estimate your premium and coverage instantly.
-                </p>
+                
 
                 <div className="card-wrapper">
                     {cards.map((card, index) => (

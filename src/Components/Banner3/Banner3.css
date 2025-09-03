@@ -51,7 +51,7 @@
 }
 
 .banner3-hero .search-btn {
-  background: orangered;
+  background: #F44A22;
   color: white;
   padding: 12px 25px;
   border: none;
@@ -61,7 +61,7 @@
 }
 
 .banner3-hero .search-btn:hover {
-  background: rgb(255, 82, 19);
+  background: #161616;
 }
 
 .banner3-hero .popular {
@@ -90,21 +90,60 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-.banner3-hero  .main-heading {
+  .banner3-hero {
+    flex-direction: column-reverse;
+    padding-left: 0;
+    padding-top: 32px;
+    min-height: 70vh;
+    align-items: flex-start;
+  }
+  .banner3-hero .hero-content {
+    max-width: 90%;
+    padding: 0 1rem;
+  }
+  .banner3-hero .main-heading {
     font-size: 32px;
   }
-
-.banner3-hero  .search-box {
-    flex-direction: column;
+  .banner3-hero .description {
+    font-size: 16px;
   }
-
-.banner3-hero  .search-input,
-.banner3-hero  .search-select,
-.banner3-hero  .search-btn {
+  .banner3-hero .small-heading {
+    font-size: 16px;
+  }
+  .banner3-hero .search-box {
+    flex-direction: row;
+    gap: 0.7rem;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .banner3-hero .search-input,
+  .banner3-hero .search-select,
+  .banner3-hero .search-btn {
     width: 100%;
   }
-  
-.banner3-hero  .hero-image {
+  .banner3-hero .hero-image {
     margin-top: 20px;
+  }
+  .banner3-hero .hero-image img {
+    width: 90vw;
+    max-width: 500px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner3-hero .main-heading {
+    font-size: 22px;
+  }
+  .banner3-hero .hero-image img {
+    max-width: 220px;
+  }
+  .banner3-hero .description {
+    font-size: 14px;
+  }
+  .banner3-hero .small-heading {
+    font-size: 14px;
   }
 }

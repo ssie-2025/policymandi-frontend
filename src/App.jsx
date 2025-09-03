@@ -21,6 +21,7 @@ import Contact from './Pages/Contact/Contact';
 import LoginPage from './Pages/LoginPage/LoginPage';
 import SignupPage from './Pages/SignupPage/SignupPage';
 import CalculatorPage from './Pages/CalculatorPage/CalculatorPage';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 
 
 
@@ -31,6 +32,7 @@ function App() {
     <>
     <BrowserRouter>
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/login' element={<LoginPage/>}/>

@@ -1,5 +1,5 @@
 .insurance-type-section {
-  background: linear-gradient(to right, #2563eb, #3b82f6);
+  background: linear-gradient(135deg, #FD5A28, #FFB347);
   color: white;
   padding: 60px 20px;
 }
@@ -37,7 +37,7 @@
 
 .insurance-type-section .btn-primary {
   background: white;
-  color: orangered;
+  color: #161616;
   padding: 12px 24px;
   border: none;
   border-radius: 8px;
@@ -47,8 +47,8 @@
 }
 
 .insurance-type-section .btn-primary:hover {
-  background: #e5e7eb;
-  color: #000;
+  background: #161616;
+  color: #fff;
 }
 
 /* Right side */

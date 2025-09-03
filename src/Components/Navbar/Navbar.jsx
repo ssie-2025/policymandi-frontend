@@ -31,7 +31,11 @@ function Navbar() {
     return (
         <header className="main-header">
       <div className="container">
-        <div className="logo"><img src={logo} alt="" height={50} width={100} /></div>
+        <div className="logo">
+          <Link to="/">
+          <img src={logo} alt="" />
+          </Link>
+          </div>
 
         <nav className={`nav ${mobileMenuOpen ? 'open' : ''}`}>
           <ul>

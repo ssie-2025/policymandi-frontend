@@ -1,24 +1,42 @@
 import React from 'react'
 import './Footer.css'
+import img from '../../assets/about_img2.jpg'
+import logo from '../../assets/logo.png'
+import { FaFacebook , FaInstagram , FaLinkedin, FaTwitter} from "react-icons/fa";
 
 function Footer() {
   return (
-     <footer className="footer">
+    <footer className="footer">
       {/* Newsletter */}
       <div className="newsletter">
-        <h2>Our Newsletters</h2>
-        <p>
-          Stay informed with expert tips, updates, and smart insurance choices—right in your inbox.
-        </p>
-        <form className="newsletter-form">
-          <input type="email" placeholder="Enter your email" />
-          <button type="submit">Submit</button>
-        </form>
-        <p className="footer-website">Policymandi.in</p>
+        <img src={img} alt="Newsletter" className="newsletter-bg" />
+        <div className="newsletter-overlay"></div>
+        <div className="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest updates, offers, and insurance tips delivered to your inbox.</p>
+          <form className="newsletter-form">
+            <input type="email" placeholder="Your Email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
 
       {/* Footer links */}
       <div className="footer-links">
+        <div className="footer-column">
+          <img src={logo} alt="" width={100} height={100}/>
+          <p>policymandi@gmail.com</p>
+          <p>
+            Get the latest insurance insights, offers, and updates from PolicyMandi.
+          </p>
+          <div className="socialmedia-icons">
+            <div className="icon"><FaFacebook /></div>
+           <div className="icon"> <a href="https://www.instagram.com/policy_mandi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><FaInstagram /></a></div>
+           <div className="icon"> <FaLinkedin /></div>
+           <a href=""></a> <div className="icon"><FaTwitter /></div>
+          </div>
+          {/*  */}
+        </div>
         <div className="footer-column">
           <h3>Navigation</h3>
           <ul>
@@ -28,9 +46,10 @@ function Footer() {
             <li>Services</li>
             <li>404</li>
           </ul>
+          {/* */}
         </div>
         <div className="footer-column">
-          <h3>Quick Link</h3>
+           <h3>Quick Link</h3>
           <ul>
             <li>Contact Us</li>
             <li>FAQs</li>
@@ -38,14 +57,6 @@ function Footer() {
             <li>Life Insurance</li>
             <li>Motor Insurance</li>
           </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Our Email-id</h3>
-          <p>policymandi@gmail.com</p>
-          <p>
-           Get the latest insurance insights, offers, and updates from PolicyMandi.
-          </p>
-          <button className="call-btn">📞 Call Us</button>
         </div>
       </div>
 

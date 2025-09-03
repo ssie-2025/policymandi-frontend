@@ -1,14 +1,25 @@
 .title{
     text-align: center;
-    color: #004d40;
+    color: #A8AAAC;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    margin: 70px 0 30px;
+    margin: 70px 0 -10px;
 }
 .title h2{
     font-size: 32px;
     margin-top: 5px;
-    text-transform: none;
-    color: #ff5a3c;
+    text-transform: capitalize;
+    color: #F44A22;
+}
+
+.heading-hr {
+    width: 100px;
+    height: 4px;
+    border: none;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #F44A22 60%, #FFD580 100%);
+    margin: auto;
+    display: block;
+    box-shadow: 0 2px 8px rgba(244,74,34,0.12);
 }

@@ -3,6 +3,7 @@ import './Whatweserve.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Heading from '../Heading/Heading';
 
 function Whatweserve() {
     const cards = [
@@ -55,6 +56,8 @@ function Whatweserve() {
     ]
   };
   return (
+    <>
+    <Heading title="Protect and Plan with Us" subTitle="Get expert guidance on insurance and financial tools that fit your lifestyle." />
      <div className="whatweserve-offer-container">
       <Slider {...settings}>
         {cards.map((card, index) => (
@@ -66,6 +69,7 @@ function Whatweserve() {
         ))}
       </Slider>
     </div>
+    </>
   )
 }
 

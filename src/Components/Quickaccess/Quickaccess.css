@@ -1,19 +1,12 @@
 .quick-access-section{
     text-align: center;
     padding: 40px 20px;
-    background: #f9fcff;
+    background: #FEF8E8;
 }
 .quick-access-section h2{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
-}
-.quick-access-section h2 span{
-    color: #1a3cc4;
-    background: linear-gradient(to right, #1a3cc4, #e40046);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .quick-access-section .card-container{

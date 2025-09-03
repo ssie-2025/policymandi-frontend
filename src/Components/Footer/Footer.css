@@ -1,29 +1,58 @@
-/* Footer.css */
-
 .footer {
-  background: linear-gradient(135deg, #1e2a38, #2f3e4e);
-  color: #ffffff;
-  padding: 40px 20px 20px;
+  background: #E4E2E3;
+  color: #161616;
+  
   font-family: 'Segoe UI', sans-serif;
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -8px 32px rgba(44,44,44,0.07);
 }
 
+/* Newsletter Section */
 .newsletter {
-  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
   margin-bottom: 40px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(44,44,44,0.09);
 }
-
-.newsletter h2 {
-  font-size: 26px;
+.newsletter-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.newsletter-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,84,0,0.7) 0%, rgba(22,22,22,0.8) 100%);
+  z-index: 2;
+}
+.newsletter-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  padding: 40px 20px;
+  color: #fff;
+}
+.newsletter-content h2 {
+  font-size: 2rem;
   margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
-
-.newsletter p {
-  font-size: 14px;
+.newsletter-content p {
+  font-size: 1.08rem;
   max-width: 600px;
   margin: 0 auto 20px;
-  color: #d3d3d3;
+  color: #ffd580;
 }
-
 .newsletter-form {
   display: flex;
   justify-content: center;
@@ -31,33 +60,46 @@
   gap: 10px;
   margin-bottom: 10px;
 }
-
 .newsletter-form input {
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 250px;
+  background: rgba(255,255,255,0.85);
+  color: #222;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
 }
-.newsletter-form input:hover{
-    background: transparent;
-    color: #fff;
+.newsletter-form input:focus {
+  outline: 2px solid #ff5400;
 }
-
+.newsletter-form input:hover {
+  background: #fff;
+  color: #ff5400;
+}
 .newsletter-form button {
-  padding: 10px 20px;
-  background-color: #ff5400;
+  padding: 12px 28px;
+  background: linear-gradient(90deg, #ff5400 60%, #ffd580 100%);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(255,84,0,0.12);
+  transition: background 0.2s;
+}
+.newsletter-form button:hover {
+  background: #222;
+  color: #ffd580;
 }
 
+/* Footer Links & Columns */
 .footer-website {
   font-size: 13px;
   margin-top: 10px;
-  color: #aaa;
+  color: #000;
 }
-
 .footer-links {
   display: flex;
   justify-content: space-around;
@@ -65,65 +107,68 @@
   text-align: left;
   margin-top: 30px;
 }
-
 .footer-column {
-  margin: 20px;
+  margin: 0;
   min-width: 180px;
 }
-
 .footer-column h3 {
   font-size: 18px;
   margin-bottom: 15px;
-  color: #fff;
+  color: #000;
 }
-
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
-
 .footer-column li {
   font-size: 14px;
   margin-bottom: 8px;
-  color: #ccc;
+  color: #000;
   cursor: pointer;
 }
-.footer-column li:hover{
-    padding-left: 10px;
-    border-bottom: 1px solid #fff;
+.footer-column li:hover {
+  padding-left: 10px;
+  border-bottom: 1px solid #000;
 }
-
 .footer-column p {
   font-size: 14px;
-  color: #ccc;
+  color: #000;
 }
-
-.call-btn {
-  margin-top: 10px;
-  padding: 10px 20px;
-  background: #ff5400;
-  border: none;
-  color: #fff;
-  border-radius: 5px;
+.footer-column .socialmedia-icons{
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  color: #000;
   cursor: pointer;
+  transition: color 0.3s ease;
 }
-
+.footer-column .socialmedia-icons a{
+  color: #000;
+}
+.footer-column .socialmedia-icons a:hover{
+  color: #F44A22;
+}
 .footer-bottom {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
-  color: #aaa;
+  color: #000;
 }
 
-
+/* Responsive */
 @media (max-width: 768px) {
   .footer-links {
-    flex-direction: column;
     align-items: center;
   }
-
   .newsletter-form {
     flex-direction: column;
     align-items: center;
+  }
+  .newsletter {
+    min-height: 180px;
+    padding: 0;
+  }
+  .newsletter-content {
+    padding: 24px 8px;
   }
 }

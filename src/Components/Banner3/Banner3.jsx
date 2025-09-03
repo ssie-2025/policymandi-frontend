@@ -9,8 +9,8 @@ function Banner3() {
         <h4 className="small-heading">Your Policy, Your Choice</h4>
         <h1 className="main-heading">Your Policy, Your Choice</h1>
         <p className="description">
-          Find the best insurance plans for Health, Life, and Motor in just a few clicks. 
-    Compare policies from top insurers and secure your future today.
+          Find the best insurance plans for Health, Life, and Motor in just a few clicks.
+          Compare policies from top insurers and secure your future today.
         </p>
 
         <div className="search-box">
@@ -29,14 +29,14 @@ function Banner3() {
         </div>
 
         <p className="popular">
-         Family Health Cover, Term Life Insurance, Car Insurance
+          Family Health Cover, Term Life Insurance, Car Insurance
         </p>
 
-        
+
       </div>
       <div className="hero-image">
-          <img src={heroImg} alt="Work with laptop" />
-        </div> 
+        <img src={heroImg} alt="Work with laptop" />
+      </div>
     </section>
   )
 }
