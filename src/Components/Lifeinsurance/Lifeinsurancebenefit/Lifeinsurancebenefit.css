@@ -1,4 +1,4 @@
-.tax-solutions-section {
+.lifeinsurance-benefit-section{
    background: linear-gradient(to right, rgba(24, 31, 36, 0.8), rgba(24, 31, 36, 0.8)),
               url('../../../assets/about_img2.jpg') no-repeat center center;
   background-size: cover;
@@ -7,14 +7,14 @@
   text-align: center;
 }
 
-.tax-heading {
+.lifeinsurance-benefit-section .lifeinsurance-benefit-heading {
   font-size: 28px;
   margin-bottom: 40px;
   font-weight: 600;
   color: #fff;
 }
 
-.tax-grid {
+.lifeinsurance-benefit-section .lifeinsurance-benefit-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
@@ -22,7 +22,7 @@
   margin: auto;
 }
 
-.tax-card {
+.lifeinsurance-benefit-section .tax-card {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 14px;
@@ -32,36 +32,36 @@
   transition: transform 0.3s ease;
 }
 
-.tax-card:hover {
+.lifeinsurance-benefit-section .tax-card:hover {
   transform: translateY(-5px);
 }
 
-.tax-card.featured {
+.lifeinsurance-benefit-section .tax-card.featured {
   background-color: #2e4e5f;
   color: white;
 }
 
-.tax-card h3 {
+.lifeinsurance-benefit-section .tax-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-.tax-card p {
+.lifeinsurance-benefit-section .tax-card p {
   font-size: 14px;
   color: #555;
 }
 
-.tax-card.featured p,
-.tax-card.featured h3 {
+.lifeinsurance-benefit-section .tax-card.featured p,
+.lifeinsurance-benefit-section  .tax-card.featured h3 {
   color: #fff;
 }
 
-.card-icon img {
+.lifeinsurance-benefit-section .card-icon img {
   width: 50px;
   margin-bottom: 10px;
 }
 
-.read-more {
+.lifeinsurance-benefit-section .read-more {
   display: inline-block;
   margin-top: 10px;
   font-size: 14px;
@@ -71,13 +71,13 @@
   cursor: pointer;
 }
 
-.tax-card.featured .read-more {
+.lifeinsurance-benefit-section .tax-card.featured .read-more {
   color: #dce9ea;
 }
 
-.view-more {
+.lifeinsurance-benefit-section .view-more {
   margin-top: 40px;
-  background-color: #ff5a3c;
+  background-color: #F44A22;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -86,17 +86,17 @@
   font-size: 16px;
 }
 
-.view-more:hover {
-  background-color: #ff6246;
+.lifeinsurance-benefit-section .view-more:hover {
+  background-color: #161616;
 }
 
-.button-container {
+.lifeinsurance-benefit-section .button-container {
   margin-top: 20px;
 }
 
 
 @media (max-width: 768px) {
-  .tax-card {
+.lifeinsurance-benefit-section  .tax-card {
     text-align: center;
   }
 }

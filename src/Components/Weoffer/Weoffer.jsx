@@ -3,11 +3,12 @@ import './Weoffer.css'
 import about_icon1 from '../../assets/about_icon1.png';
 import about_icon2 from '../../assets/about_icon2.png';
 import about_icon3 from '../../assets/about_icon3.png';
+import Heading from '../Heading/Heading';
 
 function Weoffer() {
   return (
     <section className="services-wrapper">
-      <h2 className="services-heading">What We Do</h2>
+      <Heading title="What We Do" subTitle="Insurance plans that protect your life, health, and motor."/>
       <div className="services-container">
         <div className="service-card">
           <img src={about_icon1} alt="Icon 1" />

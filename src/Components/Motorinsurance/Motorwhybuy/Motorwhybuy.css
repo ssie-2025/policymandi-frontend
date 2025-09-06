@@ -18,11 +18,12 @@
   position: relative;
 }
 
-
-.education-section .image-grid img{
-  max-width: 650px;
-  margin-left: -50px;
-  filter: drop-shadow(1px 1px 20px rgba(0,0,0,0.4));
+.education-section .image-grid img {
+  max-width: 100%;
+  margin-left: 0;
+  height: auto;
+  border-radius: 12px;
+  filter: drop-shadow(1px 1px 20px rgba(0, 0, 0, 0.4));
 }
 
 .education-section .grid-image {
@@ -33,7 +34,7 @@
 }
 
 .education-section .service-badge {
-  background: orangered;
+  background: #F44A22;
   color: #fff;
   padding: 15px 20px;
   border-radius: 12px;
@@ -82,7 +83,7 @@
 
 .education-section .features h4 {
   margin: 0;
-  color: orangered;
+  color: #F44A22;
 }
 
 .education-section .features p {
@@ -118,7 +119,7 @@
 }
 
 .education-section .discover-btn {
-  background: orangered;
+  background: #F44A22;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -129,4 +130,58 @@
 .education-section .call-info {
   font-size: 14px;
   color: #333;
+}
+
+/* ===================== Responsive ===================== */
+@media screen and (max-width: 992px) {
+  .education-section .education-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .education-section .left-column,
+  .education-section .right-column {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .education-section .image-grid img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .education-section .main-title {
+    font-size: 24px;
+  }
+
+  .education-section .features {
+    align-items: center;
+  }
+
+  .education-section .contact {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .education-section {
+    padding: 30px 15px;
+  }
+
+  .education-section .main-title {
+    font-size: 22px;
+  }
+
+  .education-section .image-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .education-section .discover-btn {
+    width: 100%;
+  }
 }

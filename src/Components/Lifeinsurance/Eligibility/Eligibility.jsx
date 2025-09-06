@@ -1,5 +1,6 @@
 import React from 'react'
 import './Eligibility.css'
+import Heading from '../../Heading/Heading';
 
 
 const steps = [
@@ -27,11 +28,7 @@ function Eligibility() {
     return (
         <section className="working-process-section">
       <div className="working-process-container">
-        <p className="section-subtitle">Process</p>
-        <h2 className="section-title">
-          Eligibility Criteria for<br />
-          <span>Life Insurance</span>
-        </h2>
+        <Heading title="Eligibility Criteria" subTitle="Who Can Apply? Understanding the Eligibility Criteria for Life Insurance"/>
 
         <div className="steps-wrapper">
           {steps.map((step, index) => (

@@ -12,21 +12,22 @@ import Motorfaq from '../../Components/Motorinsurance/Motorfaq/Motorfaq'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import PremiumCalculator from '../../Components/Calculator/PremiumCalculator'
 import FaqSection from '../../Components/FaqSection/FaqSection'
+import background_image from '../../assets/background_image4.png'
 
 function Motorinsurance() {
   return (
     <>
-    <Heroabout heading="Motor Insurance" subheading="Drive worry-free with coverage that keeps you protected on every road."/>
-    <Scrolltopbtn/>
+    <Heroabout heading="Motor Insurance" subheading="Drive worry-free with coverage that keeps you protected on every road."
+    backgroundImage={background_image}/>
+    {/* <Scrolltopbtn/> */}
     <Motorabout/>
     <Motortype/>
     <MotorComparison/>
     <Motorcriteria/>
-    <Motorpayment/>
+    {/* <Motorpayment/> */}
     <PremiumCalculator/>
     <Bannersection/>
     <Motorwhybuy/>
-    {/* <Motorfaq/> */}
     <FaqSection/>
     <Contact/>
     </>

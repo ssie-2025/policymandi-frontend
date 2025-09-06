@@ -1,5 +1,5 @@
 .tab-container {
-  background: linear-gradient(to bottom, #1b4965, #5fa8d3, #cae9ff, #fff);
+  background: linear-gradient(130deg, #F44A22, #A8AAAC);
   margin: 0 auto;
   padding: 20px;
   color: #000;
@@ -56,6 +56,9 @@
 
 .tab-content h3 {
   margin-top: 0;
+}
+.tab-content p{
+  max-width: 1200px;
 }
 
 /* Responsive Design */

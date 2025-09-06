@@ -11,12 +11,14 @@ import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import TabCalculator from '../../Components/TabCalculator/TabCalculator'
 import GetTouch from '../../Components/GetTouch/GetTouch'
 import FaqSection from '../../Components/FaqSection/FaqSection'
+import background_image from '../../assets/background-image.png'
 
 function About() {
   return (
     <>
-    <Heroabout heading="About Us" subheading="On a mission to redefine how India experiences insurance."/>
-    <Scrolltopbtn/>
+    <Heroabout heading="About Us" subheading="On a mission to redefine how India experiences insurance."
+    backgroundImage={background_image}/>
+    {/* <Scrolltopbtn/> */}
     <Aboutus/>
     <Introduction/>
     <Weoffer/>

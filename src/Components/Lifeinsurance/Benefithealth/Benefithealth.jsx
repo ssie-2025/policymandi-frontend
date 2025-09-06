@@ -5,6 +5,7 @@ import daycare from '../../../assets/HealthInsurance/daycare.png'
 import hospital from '../../../assets/HealthInsurance/hospital.png'
 import medical from '../../../assets/HealthInsurance/medical.png'
 import tax from '../../../assets/HealthInsurance/tax-payment.png'
+import Heading from '../../Heading/Heading'
 
 function Benefithealth() {
 
@@ -35,8 +36,7 @@ function Benefithealth() {
   return (
      <section className="benefithealth-section">
       <div className="ai-container">
-        <h2 className="ai-title">Protect Your Health, <br /> Preserve Your Wealth</h2>
-        <button className="ai-button">GET IN TOUCH</button>
+        <Heading title="Benefits at Glance" subTitle="Understanding the Benefits of Health Insurance Coverage"/>
 
         <div className="ai-grid">
           <div className="ai-box main-box">

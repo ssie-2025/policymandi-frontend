@@ -4,12 +4,12 @@ import lifeinsurance from '../../../assets/aboutImg.png'
 
 function Lifeabout() {
   return (
-    <section className="tax-attorney-container">
-      <div className="tax-attorney-content">
+    <section className="life-about-section">
+      <div className="life-about-content">
         <div className="image-section">
           <img
             src={lifeinsurance}
-            alt="Tax attorney consultation"
+            alt="life insurance"
           />
         </div>
 
@@ -32,7 +32,7 @@ function Lifeabout() {
            <b> &#8594;  Affordable Premiums – </b>plans that fit every budget without compromise.<br />
           </p>
 
-          <button className="cta-button">Begin Your Insurance Journey</button>
+          <button className="button">Begin Your Insurance Journey</button>
         </div>
       </div>
     </section>

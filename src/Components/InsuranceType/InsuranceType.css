@@ -104,14 +104,34 @@ background: none;
   text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .insurance-type-container {
+@media (max-width: 1024px) {
+  .insurance-type-section .insurance-type-container {
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 60px;
   }
 
-  .insurance-type-container .insurance-right {
-    grid-template-columns: 1fr;
+  .insurance-type-section .insurance-left {
+    order: 1;
+  }
+
+  .insurance-type-section .insurance-right {
+    order: 2;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 }
+
+@media (max-width: 640px) {
+  .insurance-type-section .insurance-right {
+    grid-template-columns: 1fr;
+  }
+
+  .insurance-type-section .insurance-right,
+  .insurance-type-section .insurance-left {
+    justify-items: center;
+    order: 2;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

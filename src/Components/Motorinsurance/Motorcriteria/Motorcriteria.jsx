@@ -1,12 +1,12 @@
 import React from 'react'
 import './Motorcriteria.css'
+import Heading from '../../Heading/Heading'
 
 function Motorcriteria() {
 
   return (
-    <section className="criteria-section">
-      <h2>Who Can Apply?</h2>
-      <p>Understand the Basic Requirements to Qualify for Motor Insurance with PolicyMandi</p>
+    <section className="motor-criteria-section">
+      <Heading title="Who Can Apply?" subTitle="Understand the Basic Requirements to Qualify for Motor Insurance with PolicyMandi"/>
 
       <div className="cards">
         <div class="card">

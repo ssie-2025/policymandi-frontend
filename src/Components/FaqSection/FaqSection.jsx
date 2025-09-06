@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './FaqSection.css'
 import left_img from '../../assets/family-img.jpg'
+import Heading from '../Heading/Heading';
 
 
 function FaqSection() {
@@ -12,11 +13,12 @@ function FaqSection() {
   return (
     <section className="faq-container">
       <div className="faq-left">
-        <h2>Frequently asked <span>questions</span></h2>
+        <Heading title="FAQ Section" subTitle="Choose a plan that fits your plan needs and budget."/>
+        {/* <h2>Frequently asked questions</span></h2>
         <p className='faq-desc'>
           Choose a plan that fits your plan needs and budget. No hidden fees,
           no surprises—just straightforward pricing for powerful plan management.
-        </p>
+        </p> */}
       </div>
 
       <div className="faq-list">

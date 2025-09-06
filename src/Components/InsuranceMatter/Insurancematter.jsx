@@ -64,7 +64,6 @@ function Insurancematter() {
          <div className="work-flow-text">
              <p>Why Insurance Matters to Us</p>
              <div className="showcase">
-                 <video src={short_video} autoPlay loop muted></video>
                  <h2>Protecting What<br/> Truly Counts</h2>
              </div>
               

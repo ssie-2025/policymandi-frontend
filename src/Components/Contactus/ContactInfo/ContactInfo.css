@@ -21,22 +21,25 @@
 
 .contactInfo-section .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Increased min-width for better layout */
     gap: 20px;
     justify-items: center;
+    align-items: start;
 }
 
 .contactInfo-section .contact-card {
     text-align: center;
+    padding: 10px;
 }
 
 .contactInfo-section .contact-icon {
-    font-size: 50px;
+    font-size: 40px;
     color: #fff;
     background: #000;
     border-radius: 100px;
-    padding: 10px;
-    transition: 0.2s ease-in;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
 }
 
 .contactInfo-section .contact-icon:hover {
@@ -48,4 +51,26 @@
     font-size: 15px;
     font-weight: 400;
     color: #222;
+    margin-top: 10px;
+}
+
+/* ✅ Responsive Tweaks */
+@media screen and (max-width: 768px) {
+    .contactInfo-section .contact-title {
+        font-size: 24px;
+    }
+
+    .contactInfo-section .contact-subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .contactInfo-section .contact-icon {
+        font-size: 36px;
+        padding: 12px;
+    }
+
+    .contactInfo-section .contact-card p {
+        font-size: 14px;
+    }
 }

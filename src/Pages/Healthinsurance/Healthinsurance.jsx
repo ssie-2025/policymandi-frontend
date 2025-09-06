@@ -12,11 +12,13 @@ import Contact from '../../Components/Lifeinsurance/Contact/Contact'
 import Scrolltopbtn from '../../Components/Scrolltopbtn/Scrolltopbtn'
 import GetTouch from '../../Components/GetTouch/GetTouch'
 import FaqSection from '../../Components/FaqSection/FaqSection'
+import background_image from '../../assets/background_image3.png'
 
 function Healthinsurance() {
   return (
    <>
-   <Heroabout heading="Health Insurance" subheading=" Secure your health with trusted coverage from PolicyMandi."/>
+   <Heroabout heading="Health Insurance" subheading=" Secure your health with trusted coverage from PolicyMandi."
+   backgroundImage={background_image}/>
    <Scrolltopbtn/>
    <Aboutinsurance/>
    <Types/>

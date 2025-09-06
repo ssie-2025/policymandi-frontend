@@ -1,5 +1,6 @@
 import React from 'react'
 import './Motorcomparison.css'
+import Heading from '../../Heading/Heading'
 
 const inclusions = [
     "Accidental damage to your vehicle",
@@ -25,7 +26,7 @@ const exclusions = [
 function MotorComparison() {
   return (
     <section className="comparison-section">
-        <h2>Inclusion & <span> Exclusion</span> in Motor Insurance</h2>
+        <Heading title="Inclusion & Exclusion" subTitle="Know the Limits: Inclusions and Exclusions in Health Insurance"/>
         <div className="motor-card-container">
             <div className="card do-card">
                 <h3>Inclusion</h3>

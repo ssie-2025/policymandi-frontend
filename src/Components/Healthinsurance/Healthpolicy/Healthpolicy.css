@@ -1,46 +1,11 @@
 .projects-section {
-  background-color: #1b1230;
+  background-color: #000;
   color: white;
   padding: 60px 20px;
 }
 
-.projects-content {
-  max-width: 800px;
-  margin-left: 120px;
-  margin-bottom: 70px;
-}
-
-.projects-content .tag {
-  display: inline-block;
-  background: #ff8855;
-  color: white;
-  padding: 4px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  margin-bottom: 40px;
-}
-
-.projects-content h2 {
-  font-size: 28px;
-  margin: 10px 0;
-}
-
-.projects-content p {
-  color: #ccc;
-  font-size: 14px;
-  margin: 10px 0 20px;
-}
-
-.view-button {
-  background-color: #6151c3;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
 .projects-grid {
+  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

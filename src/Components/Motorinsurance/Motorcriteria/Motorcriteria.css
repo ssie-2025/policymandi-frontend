@@ -1,15 +1,16 @@
-.criteria-section {
+.motor-criteria-section {
   text-align: center;
   padding: 60px 20px;
   background-color: #fff;
 }
 
-.criteria-section h2 {
+.motor-criteria-section h2 {
   font-size: 28px;
   margin-bottom: 40px;
 }
 
-.criteria-section .cards {
+.motor-criteria-section .cards {
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -17,24 +18,25 @@
   margin-bottom: 30px;
 }
 
-.criteria-section .card {
-   background: #e0e0e0;
+.motor-criteria-section .card {
+  width: 300px;
+  background: #e0e0e0;
   border-radius: 16px;
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 8px 8px 15px #bebebe,
-              -8px -8px 15px #ffffff;
-
+    -8px -8px 15px #ffffff;
   transition: all 0.3s ease;
 }
 
-.criteria-section .card:hover{
+.motor-criteria-section .card:hover {
   box-shadow: inset 6px 6px 12px #bebebe,
-              inset -6px -6px 12px #ffffff;
+    inset -6px -6px 12px #ffffff;
   transform: scale(0.98);
 }
 
-.criteria-section .criteria-service-card {
+/* 
+.motor-criteria-section .criteria-service-card {
   width: 280px;
   padding: 25px;
   border-radius: 6px;
@@ -44,20 +46,20 @@
   transition: transform 0.2s;
 }
 
-.criteria-section .criteria-service-card:hover {
+.motor-criteria-section .criteria-service-card:hover {
   transform: translateY(-5px);
 }
 
-.criteria-section .criteria-service-card h4 {
+.motor-criteria-section .criteria-service-card h4 {
     color: #fff;
   margin-bottom: 10px;
   font-size: 18px;
 }
-.criteria-section .criteria-service-card p{
+.motor-criteria-section .criteria-service-card p{
     color: #ccc;
 }
 
-.criteria-section .criteria-service-card a {
+.motor-criteria-section .criteria-service-card a {
   margin-top: 10px;
   display: inline-block;
   color: #1d1d1d;
@@ -65,7 +67,7 @@
   text-decoration: underline;
 }
 
-.criteria-section .criteria-button {
+.motor-criteria-section .criteria-button {
   background-color: #ff5a3c;
   color: white;
   padding: 12px 24px;
@@ -75,18 +77,18 @@
   cursor: pointer;
 }
 
-.criteria-section .criteria-button:hover {
+.motor-criteria-section .criteria-button:hover {
   background-color: #fd674c;
-}
+} */
 
 
 @media (max-width: 768px) {
- .criteria-section .criteria-services-container {
+  .motor-criteria-section .criteria-services-container {
     flex-direction: column;
     align-items: center;
   }
 
- .criteria-section .criteria-service-card {
+  .motor-criteria-section .criteria-service-card {
     width: 90%;
   }
 }

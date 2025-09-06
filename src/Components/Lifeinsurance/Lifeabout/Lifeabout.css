@@ -1,10 +1,10 @@
-.tax-attorney-container {
+.life-about-section {
   background: #f9f9f4;
   padding: 40px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.tax-attorney-content {
+.life-about-section .life-about-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,17 +14,17 @@
   flex-wrap: wrap;
 }
 
-.image-section img {
+.life-about-section .image-section img {
   width: 100%;
   max-width: 500px;
     filter: drop-shadow(1px 1px 20px rgba(0,0,0,0.4));
 }
 
-.text-section {
+.life-about-section .text-section {
   max-width: 600px;
 }
 
-.label {
+.life-about-section .label {
   background: #e6ede0;
   padding: 4px 10px;
   display: inline-block;
@@ -33,37 +33,37 @@
   border-radius: 4px;
 }
 
-.text-section h2 {
+.life-about-section .text-section h2 {
   font-size: 28px;
   margin-bottom: 15px;
   color: #2c2c2c;
 }
 
-.text-section p {
+.life-about-section .text-section p {
   font-size: 16px;
   color: #444;
   line-height: 1.6;
   margin-bottom: 20px;
 }
 
-.stats {
+.life-about-section .stats {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-.stats div {
+.life-about-section .stats div {
   text-align: center;
 }
 
-.stats strong {
+.life-about-section .stats strong {
   display: block;
   font-size: 20px;
   color: #0c3d3e;
 }
 
-.cta-button {
+.life-about-section .button {
   background-color: orangered;
   color: white;
   padding: 12px 24px;
@@ -74,18 +74,19 @@
   transition: background 0.3s;
 }
 
-.cta-button:hover {
-  background-color: rgb(224, 61, 2);
+.life-about-section .button:hover {
+  background: #161616;
+  color: #fff;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .tax-attorney-content {
+.life-about-section .life-about-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .stats {
+ .life-about-section .stats {
     justify-content: center;
   }
 }

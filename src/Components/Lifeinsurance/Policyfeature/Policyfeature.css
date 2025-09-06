@@ -1,31 +1,37 @@
-.Policyfeature-section{
-    padding: 60px 20px;
-    background: #fff;
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
+.Policyfeature-section {
+  padding: 60px 20px;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
 }
-.Policyfeature-section .service-header{
+
+.Policyfeature-section .service-header {
   position: sticky;
   top: 60px;
   flex: 0 0 350px;
   height: fit-content;
   z-index: 2;
 }
-.Policyfeature-section .service-header h2{
-    margin-top: 200px;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #ff5a3c;
+
+.Policyfeature-section .service-header h2 {
+  margin-top: 200px;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #F44A22;
 }
-.Policyfeature-section .service-header p{
-    font-size: 0.9rem;
-    color: #555;
-    width: 400px;
-    margin: 0 auto 20px;
+
+.Policyfeature-section .service-header p {
+  font-size: 0.9rem;
+  color: #555;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 20px;
 }
-.Policyfeature-section .learn-more{
-    background-color: #000;
+
+.Policyfeature-section .learn-more {
+  background-color: #000;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -34,25 +40,29 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
-.Policyfeature-section .learn-more:hover{
-    background: #ff5a3c;
+
+.Policyfeature-section .learn-more:hover {
+  background: #F44A22;
 }
-.Policyfeature-section .services-grid{
-    width: 60%;
-    max-height: 80vh;
-    overflow-y: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 100px;
-    margin-top: 40px;
-    gap: 20px;
-    scrollbar-width: none;
+
+.Policyfeature-section .services-grid {
+  width: 60%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 40px;
+  gap: 20px;
+  scrollbar-width: none;
 }
+
 .Policyfeature-section .services-grid::-webkit-scrollbar {
-    display: none; 
+  display: none;
 }
-.Policyfeature-section .service-card{
+
+.Policyfeature-section .service-card {
   background-color: #0c0c0c;
   color: #fff;
   padding: 30px;
@@ -61,30 +71,79 @@
   text-align: left;
   transition: 0.3s;
 }
-.Policyfeature-section .service-card h3{
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+
+.Policyfeature-section .service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
-.Policyfeature-section .service-card p{
-    font-size: 0.95rem;
-    color: #bbb;
+
+.Policyfeature-section .service-card p {
+  font-size: 0.95rem;
+  color: #bbb;
 }
-@media (max-width: 768px) {
-  .Policyfeature-section{
-    display: flex;
-    flex-direction: column;
-  }
-   .Policyfeature-section  .services-grid {
+
+/* ================= Responsive Styles ================= */
+@media screen and (max-width: 1024px) {
+  .Policyfeature-section {
     flex-direction: column;
     align-items: center;
+    gap: 60px;
+    padding: 40px 20px;
   }
 
- .Policyfeature-section .services-header h2 {
+  .Policyfeature-section .service-header {
+    position: static;
+    flex: none;
+    text-align: center;
+  }
+
+  .Policyfeature-section .service-header h2 {
+    margin-top: 0;
+    font-size: 2rem;
+  }
+
+  .Policyfeature-section .services-grid {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Policyfeature-section .services-grid {
+    gap: 16px;
+  }
+
+  .Policyfeature-section .service-card {
+    width: 140px;
+    padding: 20px;
+  }
+
+  .Policyfeature-section .service-card h3 {
+    font-size: 1rem;
+  }
+
+  .Policyfeature-section .service-card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Policyfeature-section .service-header h2 {
     font-size: 1.6rem;
   }
 
- .Policyfeature-section .service-card {
+  .Policyfeature-section .service-header p {
+    font-size: 0.85rem;
+  }
+
+  .Policyfeature-section .learn-more {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .Policyfeature-section .service-card {
     width: 100%;
-    margin-left: 50px;
+    max-width: 90%;
   }
 }

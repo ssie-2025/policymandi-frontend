@@ -92,6 +92,7 @@
  .life-insurance-contact  .contact-container {
     flex-direction: column;
     padding: 30px 20px;
+    height: 80vh;
   }
 
 .life-insurance-contact  .contact-info {
@@ -101,5 +102,8 @@
 
  .life-insurance-contact .input-row {
     flex-direction: column;
+  }
+   .life-insurance-contact .contact-info img {
+    display: none;
   }
 }

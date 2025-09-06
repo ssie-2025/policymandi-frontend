@@ -45,7 +45,6 @@ function WorkFlow() {
         <div className="work-flow-text">
           <p>Claim Process</p>
           <div className="showcase">
-            <video src={short_video} autoPlay loop muted></video>
             <h2>Fast, Transparent & Supportive <br /> Claim Assistance</h2>
           </div>
 

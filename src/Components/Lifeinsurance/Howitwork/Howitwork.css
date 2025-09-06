@@ -3,7 +3,7 @@
     text-align: center;
 }
 .howitwork-scroll-section .background-img{
-     background: linear-gradient(to right, rgba(24, 31, 36, 0.8), rgba(24, 31, 36, 0.8)),
+     background: linear-gradient(rgba(248, 79, 13, 0.5), rgba(0, 0, 0, 0.7)),
               url('../../../assets/lifeinsurance/agent.jpg') no-repeat center center;
   background-size: cover;
   height: 40vh;

@@ -16,7 +16,7 @@
 }
 
 .type-section .subtitle {
-  color: #f26322;
+  color: #F44A22;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.9rem;
@@ -26,7 +26,7 @@
 .type-section .type-header h2 {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #ff5a3c;
+  color: #F44A22;
 }
 
 .type-section .description {
@@ -62,12 +62,12 @@
 .type-section .icon {
   font-size: 2rem;
   margin-bottom: 15px;
-  color: #f26322;
+  color: #F44A22;
 }
 
 .type-section .type-card h3 {
   font-size: 1.2rem;
-  color: #ff5a3c;
+  color: #F44A22;
   margin-bottom: 10px;
 }
 

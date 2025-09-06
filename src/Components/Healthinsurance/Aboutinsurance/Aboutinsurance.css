@@ -21,7 +21,7 @@
 .health-about-section .about-content h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #ff5a3c;
+  color: #F44A22;
 }
 
 .health-about-section .about-content p {
@@ -46,7 +46,7 @@
 }
 
 .health-about-section .about-list li:hover {
-  color: #ff5a3c;
+  color: #161616;
 }
 
 .health-about-section .about-buttons {
@@ -64,11 +64,11 @@
 }
 
 .health-about-section .btn.primary {
-  background-color: #ff5a3c;
+  background-color: #F44A22;
   color: white;
 }
 .health-about-section .btn.primary:hover{
-    background-color: #fd4d2d;
+    background-color: #161616;
 }
 
 .health-about-section .btn.secondary {

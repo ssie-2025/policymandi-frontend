@@ -12,12 +12,12 @@ function Contact() {
   return (
     <>
     
-    <Scrolltopbtn/>
+    {/* <Scrolltopbtn/> */}
     <Bcontact/>
     {/* <Contactpage/> */}
     {/* <Contactsection/> */}
     <ContactInfo/>
-    <ContactTestimonial/>
+    {/* <ContactTestimonial/> */}
     <Contactmap/>
     </>
   )

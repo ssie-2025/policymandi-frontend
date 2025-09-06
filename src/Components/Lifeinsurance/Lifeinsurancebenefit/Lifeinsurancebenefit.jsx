@@ -56,9 +56,9 @@ const taxServices = [
 function Lifeinsurancebenefit() {
 
   return (
-    <section className="tax-solutions-section">
-      <h2 className="tax-heading">Life Insurance Benefits at a Glance</h2>
-      <div className="tax-grid">
+    <section className="lifeinsurance-benefit-section">
+      <h2 className="lifeinsurance-benefit-heading">Life Insurance Benefits at a Glance</h2>
+      <div className="lifeinsurance-benefit-grid">
         {taxServices.map((service, index) => (
           <div
             key={index}

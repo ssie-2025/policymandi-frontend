@@ -1,5 +1,33 @@
-@media (max-width: 768px) {
-    iframe{
-        width: 600px;
-    }
+.contactmap {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-responsive {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Optional: Reduce padding on smaller devices */
+@media screen and (max-width: 768px) {
+  .contactmap {
+    padding: 40px 10px;
+  }
 }

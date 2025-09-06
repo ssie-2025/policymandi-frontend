@@ -1,5 +1,6 @@
 import React,{ useRef }from 'react'
 import './Corevalue.css'
+import Heading from '../Heading/Heading';
 
 const data = [
   {
@@ -38,25 +39,11 @@ function Corevalue() {
     if(dir === "left") current.scrollBy({left: -300, behaviour: "smooth"});
     else current.scrollBy({left: 300, behaviour: "smooth"});
   };
-// const scrollRef = useRef(null);
-
-//   const scroll = (dir) => {
-//     const { current } = scrollRef;
-//     if (dir === "left") current.scrollBy({ left: -300, behavior: "smooth" });
-//     else current.scrollBy({ left: 300, behavior: "smooth" });
-//   };
-
 
     
   return (
     <div className="text-carousel-wrapper">
-      <h2 className="text-carousel-heading">
-        The Core value
-      </h2>
-      <p className="text-carousel-sub">
-        Guided by Trust. Driven by Integrity.
-      </p>
-
+      <Heading title="The Core value" subTitle="Guided by Trust. Driven by Integrity."/>
       <div className="carousel-box">
         <button className="arrow left" onClick={() => scroll("left")}>&#8249;</button>
 

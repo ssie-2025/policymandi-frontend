@@ -14,11 +14,13 @@ import GetTouch from '../../Components/GetTouch/GetTouch'
 import CoverageCalculator from '../../Components/Calculator/CoverageCalculator'
 import WorkFlow from '../../Components/WorkFlow/WorkFlow'
 import FaqSection from '../../Components/FaqSection/FaqSection'
+import background_image from '../../assets/background_image2.png'
 
 function Lifeinsurance() {
   return (
     <>
-    <Heroabout heading="Life Insurance" subheading="Life insurance that gives peace of mind and lasting security."/>
+    <Heroabout heading="Life Insurance" subheading="Life insurance that gives peace of mind and lasting security."
+    backgroundImage={background_image}/>
     <Scrolltopbtn/>
     <Lifeabout/>
     <Lifeinsurancebenefit/>
