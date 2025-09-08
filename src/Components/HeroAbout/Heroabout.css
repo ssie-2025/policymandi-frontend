@@ -44,9 +44,6 @@
 }
 
 @media screen and (max-width: 480px) {
-  .about-hero{
-    width: 95%;
-  }
   .about-content h1 {
     font-size: 26px;
   }

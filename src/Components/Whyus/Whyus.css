@@ -177,9 +177,6 @@
 
 
 @media (max-width: 768px) {
-  .hero-section{
-    height: 55vh;
-  }
   .hero-content {
     flex-direction: column;
     align-items: flex-start;
@@ -202,4 +199,7 @@
     margin-bottom: 10px;
     width: fit-content;
   }
+   .hero-right img{
+    display: none;
+   }
 }
