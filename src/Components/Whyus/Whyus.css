@@ -2,12 +2,15 @@
   position: relative;
   background: linear-gradient(rgba(248, 79, 13, 0.5), rgba(0, 0, 0, 0.7)),
               url("../../assets/about_img2.jpg") no-repeat center/cover;
-  height: 300px;
+  height: auto;
+  min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .overlay {
@@ -16,7 +19,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  
   z-index: 1;
 }
 
@@ -29,6 +31,7 @@
   padding: 0 30px;
   width: 100%;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .hero-left {
@@ -48,10 +51,15 @@
   margin-bottom: 25px;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
 .hero-buttons .btn {
   padding: 12px 24px;
   font-size: 16px;
-  margin-right: 15px;
   border: none;
   cursor: pointer;
   border-radius: 6px;
@@ -90,8 +98,88 @@
   border-radius: 8px;
 }
 
-/* Responsive */
+/* ========================== */
+/* === Responsive Styles === */
+/* ========================== */
+
+@media screen and (max-width: 1024px) {
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-left p {
+    font-size: 16px;
+  }
+
+  .hero-content {
+    gap: 20px;
+  }
+
+  .hero-left {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 20px;
+  }
+
+  .hero-left, .hero-right {
+    width: 100%;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+
+  .hero-right {
+    text-align: center;
+  }
+
+  .hero-right img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-right img {
+    max-width: 100%;
+  }
+}
+
+
 @media (max-width: 768px) {
+  .hero-section{
+    height: 55vh;
+  }
   .hero-content {
     flex-direction: column;
     align-items: flex-start;

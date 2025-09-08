@@ -1,5 +1,4 @@
 import React from 'react'
-import './Home.css'
 import Hero from "../../Components/Hero/Hero";
 import Heading from '../../Components/Heading/Heading'
 import Feature from '../../Components/Feature/Feature'

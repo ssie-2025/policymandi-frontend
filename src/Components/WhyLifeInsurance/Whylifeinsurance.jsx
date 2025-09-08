@@ -11,7 +11,6 @@ function Whylifeinsurance() {
     <section className="why-life-insurance-section">
       <div className="life-left">
         <h2>Why Take Life Insurance?</h2>
-        <div className="underline-deco"></div>
         <p>
           Life insurance isn’t just a policy — it’s a promise to protect the
           people you love. It ensures that your family stays financially secure
@@ -20,7 +19,6 @@ function Whylifeinsurance() {
       </div>
 
       <div className="life-right">
-        {/* Accordion 1 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(1)}>
              1. Financial Security for Your Family
@@ -33,7 +31,6 @@ function Whylifeinsurance() {
           )}
         </div>
 
-        {/* Accordion 2 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(2)}>
              2. Covers Loans & Liabilities
@@ -46,7 +43,6 @@ function Whylifeinsurance() {
           )}
         </div>
 
-        {/* Accordion 3 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(3)}>
              3. Peace of Mind
@@ -59,7 +55,6 @@ function Whylifeinsurance() {
           )}
         </div>
 
-        {/* Accordion 4 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(4)}>
              4. Affordable Protection
@@ -72,7 +67,6 @@ function Whylifeinsurance() {
           )}
         </div>
 
-        {/* Accordion 5 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(5)}>
              5. Tax Benefits
@@ -85,7 +79,6 @@ function Whylifeinsurance() {
           )}
         </div>
 
-        {/* Accordion 6 */}
         <div className="accordion-item">
           <div className="accordion-header" onClick={() => toggle(6)}>
              6. Build Long-Term Wealth (ULIPs & Endowment Plans)

@@ -11,25 +11,21 @@ function Whatweserve() {
       title: "Health Insurance",
       subtitle: "Book Free Health Insurance Consultation at home",
       button: "Book home visit",
-      color: "#2980b9"
     },
     {
       title: "SIP Calculator",
       subtitle: "Reach your financial goals. Make investment simple.",
       button: "Calculate Now",
-      color: "#e74c3c"
     },
     {
       title: "Health Insurance",
       subtitle: "Book Free Health Insurance Consultation at home",
       button: "Book home visit",
-      color: "#2980b9"
     },
     {
       title: "SIP Calculator",
       subtitle: "Reach your financial goals. Make investment simple.",
       button: "Calculate Now",
-      color: "#e74c3c"
     }
     
   ];

@@ -31,7 +31,7 @@
 
 @media screen and (max-width: 768px) {
   .about-content h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .about-content p {
@@ -39,8 +39,24 @@
   }
 
   .about-hero {
-    padding: 40px 15px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    padding: 40px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-hero{
+    width: 95%;
+  }
+  .about-content h1 {
+    font-size: 26px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+  }
+
+  .about-hero {
+    padding: 30px 12px;
+    border-radius: 16px;
   }
 }
